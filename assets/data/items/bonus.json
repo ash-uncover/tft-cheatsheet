@@ -1,0 +1,39 @@
+{
+  "bonus": [
+    {
+      "id": "AR",
+      "name": "Armor",
+      "format": "+{0}"
+    },
+    {
+      "id": "AP",
+      "name": "Ability Power",
+      "format": "+{0}"
+    },
+    {
+      "id": "AD",
+      "name": "Damage",
+      "format": "+{0}"
+    },
+    {
+      "id": "MA",
+      "name": "Starting Mana",
+      "format": "+{0}"
+    },
+    {
+      "id": "MR",
+      "name": "Magic Resist",
+      "format": "+{0}"
+    },
+    {
+      "id": "AS",
+      "name": "Attack Speed",
+      "format": "+{0}%"
+    },
+    {
+      "id": "HP",
+      "name": "Health",
+      "format": "+{0}"
+    }
+  ]
+}

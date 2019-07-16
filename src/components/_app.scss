@@ -1,0 +1,38 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: black;
+
+  .app-header {
+    height: 60px;
+    background: black;
+    border-bottom: 2px solid peru;
+
+    font-size: 1.15rem;
+    color: goldenrod;
+
+    display: flex;
+    align-items: center;
+
+    .app-header-item {
+      margin: 0 1rem;
+      &:hover {
+        color: white;
+        cursor: pointer;
+      }
+      .fas {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .app-content {
+    flex-grow: 1;
+  }
+
+  .app-footer {
+    height: 50px;
+    background: black;
+  }
+}

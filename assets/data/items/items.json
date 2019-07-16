@@ -1,0 +1,466 @@
+{
+  "items": [
+    {
+      "id": "SWORD",
+      "name": "B.F. Sword",
+      "image": "SWORD.png",
+      "bonus": {
+        "AD": 20
+      },
+      "isComplex": false,
+      "ingredients": []
+    }, {
+      "id": "BOW",
+      "name": "Recurve Bow",
+      "image": "BOW.png",
+      "bonus": {
+        "AS": 15
+      },
+      "isComplex": false,
+      "ingredients": []
+      }, {
+        "id": "ROD",
+        "name": "Needlessly Large Rod",
+        "image": "ROD.png",
+        "bonus": {
+          "AP": 20
+        },
+        "isComplex": false,
+        "ingredients": []
+      }, {
+        "id": "TEAR",
+        "name": "Tear of the Goddess",
+        "image": "TEAR.png",
+        "bonus": {
+          "MA": 20
+        },
+        "isComplex": false,
+        "ingredients": []
+    }, {
+      "id": "VEST",
+      "name": "Chain Vest",
+      "image": "VEST.png",
+      "bonus": {
+        "AR": 20
+      },
+      "isComplex": false,
+      "ingredients": []
+    }, {
+      "id": "CLOAK",
+      "name": "Negatron Cloak",
+      "image": "CLOAK.png",
+      "bonus": {
+        "MR": 20
+      },
+      "isComplex": false,
+      "ingredients": []
+    }, {
+      "id": "BELT",
+      "name": "Giant's Belt",
+      "image": "BELT.png",
+      "bonus": {
+        "HP": 200
+      },
+      "isComplex": false,
+      "ingredients": []
+    }, {
+      "id": "SPATULA",
+      "name": "Spatula",
+      "image": "SPATULA.png",
+      "bonus": {
+      },
+      "isComplex": false,
+      "ingredients": []
+    }, {
+      "id": "INFINITY_EDGE",
+      "name": "Infinity Edge",
+      "image": "INFINITY_EDGE.png",
+      "bonus": {
+        "AD": 40
+      },
+      "passive": "+100% Critical Strike Damage.",
+      "isComplex": true,
+      "ingredients": ["SWORD", "SWORD"]
+    }, {
+      "id": "SWORD_DIVINE",
+      "name": "Sword of the Divine",
+      "image": "SWORD_DIVINE.png",
+      "bonus": {
+        "AD": 20,
+        "AS": 15
+      },
+      "passive": "Every second, has a 5% chance to gain 100% critical strike chance until the end of combat.",
+      "isComplex": true,
+      "ingredients": ["SWORD", "BOW"]
+    }, {
+      "id": "HEXTECH_GUNBLADE",
+      "name": "Hextech Gunblade",
+      "image": "HEXTECH_GUNBLADE.png",
+      "bonus": {
+        "AD": 20,
+        "AP": 20
+      },
+      "passive": "Heal for 25% of damage dealt.",
+      "isComplex": true,
+      "ingredients": ["SWORD", "ROD"]
+    }, {
+      "id": "SPEAR_SHOJIN",
+      "name": "Spear of Shojin",
+      "image": "SPEAR_SHOJIN.png",
+      "bonus": {
+        "AD": 20,
+        "MA": 20
+      },
+      "passive": "After casting Special Ability for the first time, basic attacks restore an additional 15% of maximum mana on-hit.",
+      "isComplex": true,
+      "ingredients": ["SWORD", "TEAR"]
+    }, {
+      "id": "GUARDIAN_ANGEL",
+      "name": "Guardian Angel",
+      "image": "GUARDIAN_ANGEL.png",
+      "bonus": {
+        "AD": 20,
+        "AR": 20
+      },
+      "passive": "Upon death, revive with 500 health.",
+      "isComplex": true,
+      "ingredients": ["SWORD", "VEST"]
+    }, {
+      "id": "BLOODTHIRSTER",
+      "name": "Bloodthirster",
+      "image": "BLOODTHIRSTER.png",
+      "bonus": {
+        "AD": 20,
+        "MR": 20
+      },
+      "passive": "Heal for 50% of damage dealt by basic attacks.",
+      "isComplex": true,
+      "ingredients": ["SWORD", "CLOAK"]
+    }, {
+      "id": "BLOODTHIRSTER",
+      "name": "Bloodthirster",
+      "image": "BLOODTHIRSTER.png",
+      "bonus": {
+        "AD": 20,
+        "MR": 20
+      },
+      "passive": "Heal for 50% of damage dealt by basic attacks.",
+      "isComplex": true,
+      "ingredients": ["SWORD", "CLOAK"]
+    }, {
+      "id": "ZEKE_HERALD",
+      "name": "Zeke's Herald",
+      "image": "ZEKE_HERALD.png",
+      "bonus": {
+        "AD": 20,
+        "HP": 200
+      },
+      "passive": "At the beginning of combat, all adjacent allies gain 10% attack speed.",
+      "isComplex": true,
+      "ingredients": ["SWORD", "BELT"]
+    }, {
+      "id": "YOUMUU_GHOSTBLADE",
+      "name": "Youmuu's Ghostblade",
+      "image": "YOUMUU_GHOSTBLADE.png",
+      "bonus": {
+        "AD": 20
+      },
+      "passive": "Becomes an Assassin.",
+      "isComplex": true,
+      "ingredients": ["SWORD", "SPATULA"]
+    }, {
+      "id": "RAPID_FIRECANNON",
+      "name": "Rapid Firecannon",
+      "image": "RAPID_FIRECANNON.png",
+      "bonus": {
+        "AS": 30
+      },
+      "passive": "Doubles attack range. Basic attacks cannot miss.",
+      "isComplex": true,
+      "ingredients": ["BOW", "BOW"]
+    }, {
+      "id": "GUINSOO_RAGEBLADE",
+      "name": "Guinsoo Rageblade",
+      "image": "GUINSOO_RAGEBLADE.png",
+      "bonus": {
+        "AP": 20,
+        "AS": 15
+      },
+      "passive": "Gain 3% attack speed on-hit. Stacks with no upper limit.",
+      "isComplex": true,
+      "ingredients": ["BOW", "ROD"]
+    }, {
+      "id": "STATIKK_SHIV",
+      "name": "Statikk Shiv",
+      "image": "STATIKK_SHIV.png",
+      "bonus": {
+        "AS": 15,
+        "MA": 20
+      },
+      "passive": "Every third basic attack deals 100 magic damage to the target and all adjacent enemies.",
+      "isComplex": true,
+      "ingredients": ["BOW", "TEAR"]
+    }, {
+      "id": "PHANTOM_DANCER",
+      "name": "Phantom Dancer",
+      "image": "PHANTOM_DANCER.png",
+      "bonus": {
+        "AR": 20,
+        "AS": 15
+      },
+      "passive": "Dodge all critical strikes.",
+      "isComplex": true,
+      "ingredients": ["BOW", "VEST"]
+    }, {
+      "id": "CURSED_BLADE",
+      "name": "Cursed Blade",
+      "image": "CURSED_BLADE.png",
+      "bonus": {
+        "AS": 15,
+        "MR": 20
+      },
+      "passive": "Basic attacks have a 20% chance to shrink the target, removing 1 Star.",
+      "isComplex": true,
+      "ingredients": ["BOW", "CLOAK"]
+    }, {
+      "id": "TITANIC_HYDRA",
+      "name": "Titanic Hydra",
+      "image": "TITANIC_HYDRA.png",
+      "bonus": {
+        "AS": 15,
+        "HP": 200
+      },
+      "passive": "Basic attacks deal 10% of your maximum health bonus damage to the target and all adjacent enemies.",
+      "isComplex": true,
+      "ingredients": ["BOW", "BELT"]
+    }, {
+      "id": "BLADE_RUINED_KING",
+      "name": "Blade of the Ruined King",
+      "image": "BLADE_RUINED_KING.png",
+      "bonus": {
+        "AS": 15
+      },
+      "passive": "Becomes a Blademaster.",
+      "isComplex": true,
+      "ingredients": ["BOW", "SPATULA"]
+    }, {
+      "id": "RABADON_DEATHCAP",
+      "name": "Rabadon's Deathcap",
+      "image": "RABADON_DEATHCAP.png",
+      "bonus": {
+        "AP": 40
+      },
+      "passive": "Increases Ability power by 50%.",
+      "isComplex": true,
+      "ingredients": ["ROD", "ROD"]
+    }, {
+      "id": "LUDEN_ECHO",
+      "name": "Luden's Echo",
+      "image": "LUDEN_ECHO.png",
+      "bonus": {
+        "AP": 20,
+        "MA": 20
+      },
+      "passive": "Special Ability deals 200 magic damage to all adjacent enemies to target.",
+      "isComplex": true,
+      "ingredients": ["ROD", "TEAR"]
+    }, {
+      "id": "LOCKET_SOLARI",
+      "name": "Locket of the Iron Solari",
+      "image": "LOCKET_SOLARI.png",
+      "bonus": {
+        "AP": 20,
+        "AR": 20
+      },
+      "passive": "At the beginning of combat, all adjacent allies gain a 200 health shield.",
+      "isComplex": true,
+      "ingredients": ["ROD", "VEST"]
+    }, {
+      "id": "IONIC_SPARK",
+      "name": "Ionic Spark",
+      "image": "IONIC_SPARK.png",
+      "bonus": {
+        "AP": 20,
+        "MR": 20
+      },
+      "passive": "Enemies take 200 magic damage whenever they cast their Special Ability.",
+      "isComplex": true,
+      "ingredients": ["ROD", "CLOAK"]
+    }, {
+      "id": "MORELLONOMICON",
+      "name": "Morellonomicon",
+      "image": "MORELLONOMICON.png",
+      "bonus": {
+        "AP": 20,
+        "HP": 200
+      },
+      "passive": "Special Ability applies a burn on the enemies hit for 3 seconds, dealing 2.5% of target's maximum health true damage per second and preventing healing on the target.",
+      "isComplex": true,
+      "ingredients": ["ROD", "BELT"]
+    }, {
+      "id": "YUUMI",
+      "name": "Yuumi",
+      "image": "YUUMI.png",
+      "bonus": {
+        "AP": 20
+      },
+      "passive": "Becomes a Sorcerer.",
+      "isComplex": true,
+      "ingredients": ["ROD", "SPATULA"]
+    }, {
+      "id": "SERAPH_EMBRACE",
+      "name": "Seraph's embrace",
+      "image": "SERAPH_EMBRACE.png",
+      "bonus": {
+        "MA": 40
+      },
+      "passive": "After casting Special Ability, gain 20 mana.",
+      "isComplex": true,
+      "ingredients": ["TEAR", "TEAR"]
+    }, {
+      "id": "FROZEN_HEART",
+      "name": "Frozen Heart",
+      "image": "FROZEN_HEART.png",
+      "bonus": {
+        "MA": 20,
+        "AR": 20
+      },
+      "passive": "Adjacent enemies have their attack speed reduced by 20%.",
+      "isComplex": true,
+      "ingredients": ["TEAR", "VEST"]
+    }, {
+      "id": "HUSH",
+      "name": "Hush",
+      "image": "HUSH.png",
+      "bonus": {
+        "MA": 20,
+        "MR": 20
+      },
+      "passive": "Basic attacks have a 30% chance to silence the target.",
+      "isComplex": true,
+      "ingredients": ["TEAR", "CLOAK"]
+    }, {
+      "id": "REDEMPTION",
+      "name": "Redemption",
+      "image": "REDEMPTION.png",
+      "bonus": {
+        "MA": 20,
+        "HP": 200
+      },
+      "passive": "On death, after a small delay, heal nearby allies for 1000 health.",
+      "isComplex": true,
+      "ingredients": ["TEAR", "BELT"]
+    }, {
+      "id": "DARKIN",
+      "name": "Darkin",
+      "image": "DARKIN.png",
+      "bonus": {
+        "MA": 20
+      },
+      "passive": "Becomes a Demon.",
+      "isComplex": true,
+      "ingredients": ["TEAR", "SPATULA"]
+    }, {
+      "id": "THRONMAIL",
+      "name": "Thornmail",
+      "image": "THRONMAIL.png",
+      "bonus": {
+        "AR": 40
+      },
+      "passive": "Reflect 35% of damage taken from basic attacks as magic damage.",
+      "isComplex": true,
+      "ingredients": ["VEST", "VEST"]
+    }, {
+      "id": "SWORD_BREAKER",
+      "name": "Sword Breaker",
+      "image": "SWORD_BREAKER.png",
+      "bonus": {
+        "AR": 20,
+        "MR": 20
+      },
+      "passive": "Basic attacks have a 20% chance to Disarm icon disarm the target.",
+      "isComplex": true,
+      "ingredients": ["VEST", "CLOAK"]
+    }, {
+      "id": "RED_BUFF",
+      "name": "Red Buff",
+      "image": "RED_BUFF.png",
+      "bonus": {
+        "AR": 20,
+        "HP": 200
+      },
+      "passive": "Basic attacks deal 2.5% of target's maximum health true damage per second and prevent healing on the target.",
+      "isComplex": true,
+      "ingredients": ["VEST", "BELT"]
+    }, {
+      "id": "KNIGHT_VOW",
+      "name": "Knight's Vow",
+      "image": "KNIGHT_VOW.png",
+      "bonus": {
+        "AR": 20
+      },
+      "passive": "Becomes a Knight.",
+      "isComplex": true,
+      "ingredients": ["VEST", "SPATULA"]
+    }, {
+      "id": "DRAGON_CLAW",
+      "name": "Dragon's Claw",
+      "image": "DRAGON_CLAW.png",
+      "bonus": {
+        "MR": 40
+      },
+      "passive": "Gain 83% resistance to magic damage.",
+      "isComplex": true,
+      "ingredients": ["CLOAK", "CLOAK"]
+    }, {
+      "id": "ZEPHYR",
+      "name": "Zephyr",
+      "image": "ZEPHYR.png",
+      "bonus": {
+        "MR": 20,
+        "HP": 200
+      },
+      "passive": "At the start of combat, banishes for 5 seconds the unit that mirrors the wielder placement on the other side of the board.",
+      "isComplex": true,
+      "ingredients": ["CLOAK", "BELT"]
+    }, {
+      "id": "RUNAAN_HURRICANE",
+      "name": "Runaan's Hurricane",
+      "image": "RUNAAN_HURRICANE.png",
+      "bonus": {
+        "MR": 20
+      },
+      "passive": "Basic attacks hit 2 additional targets for 50% damage.",
+      "isComplex": true,
+      "ingredients": ["CLOAK", "SPATULA"]
+    }, {
+      "id": "WARMOG_ARMOR",
+      "name": "Warmog's Armor",
+      "image": "WARMOG_ARMOR.png",
+      "bonus": {
+        "HP": 400
+      },
+      "passive": "Regenerates 3% of maximum health per second.",
+      "isComplex": true,
+      "ingredients": ["BELT", "BELT"]
+    }, {
+      "id": "FROZEN_MALLET",
+      "name": "Frozen Mallet",
+      "image": "FROZEN_MALLET.png",
+      "bonus": {
+        "HP": 200
+      },
+      "passive": "Becomes a Glacial.",
+      "isComplex": true,
+      "ingredients": ["BELT", "SPATULA"]
+    }, {
+      "id": "FORCE_NATURE",
+      "name": "Force of Nature",
+      "image": "FORCE_NATURE.png",
+      "bonus": {},
+      "passive": "Increases the unit cap by 1.",
+      "isComplex": true,
+      "ingredients": ["SPATULA", "SPATULA"]
+    }
+  ]
+}
