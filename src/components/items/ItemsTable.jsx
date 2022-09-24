@@ -29,15 +29,7 @@ class ItemsTable extends React.Component {
 
   _buildTableRow (itemBase, index) {
     return (
-      <div
-        key={`row-${itemBase.id}`}
-        className='items-table-row'>
-        <ItemsTableCell
-          indexRow={index}
-          indexCol={0}
-          itemId={itemBase.id} />
-        {this._buildTableRowCells(itemBase, index)}
-      </div>
+
     )
   }
 
