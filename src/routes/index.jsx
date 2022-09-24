@@ -1,12 +1,12 @@
 import React from 'react'
 
 import {
-    useSelector,
+  useSelector,
 } from 'lib/hooks'
 
 import {
-    selectors as AppSelectors
-  } from 'store/app'
+  selectors as DataSelectors
+} from 'store/data'
 
 import Home from 'components/home/Home'
 import HomeError from 'components/home/HomeError'
@@ -16,21 +16,21 @@ import DataStates from 'lib/constants/DataStates'
 
 const RouteRoot = () => {
 
-    const appLoadStatus = useSelector(AppSelectors.appLoadStatus)
+  const status = useSelector(DataSelectors.dataStatusSelector)
 
-    switch (appLoadStatus) {
-        case DataStates.NEVER:
-        case DataStates.FETCHING_FIRST:
-        case DataStates.FETCHING: {
-            return <HomeLoading />
-        }
-        case DataStates.SUCCESS: {
-            return <Home />
-        }
-        default: {
-            return <HomeError />
-        }
+  switch (status) {
+    case DataStates.NEVER:
+    case DataStates.FETCHING_FIRST:
+    case DataStates.FETCHING: {
+      return <HomeLoading />
     }
+    case DataStates.SUCCESS: {
+      return <Home />
+    }
+    default: {
+      return <HomeError />
+    }
+  }
 }
 
 export default RouteRoot

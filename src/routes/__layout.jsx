@@ -22,6 +22,8 @@ import HomeError from 'components/home/HomeError'
 import HomeLoading from 'components/home/HomeLoading'
 import RouteHome from 'routes'
 
+import * as ServiceHelper from 'services/ServiceHelper'
+
 const Root = () => {
 
   const dispatch = useDispatch()
@@ -29,7 +31,7 @@ const Root = () => {
   const dataLoadStatus = useSelector(DataSelectors.dataStatusSelector)
 
   useEffect(() => {
-    //Service.loadData(dispatch)
+    ServiceHelper.loadData(dispatch)
   }, [])
 
   switch (dataLoadStatus) {
