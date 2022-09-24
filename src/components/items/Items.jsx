@@ -80,19 +80,19 @@ const ItemsTableRow = ({ items, indexRow }) => {
 const ItemsTableCell = ({ item, indexRow, indexCol }) => {
   // Hooks
   const dispatch = useDispatch()
-  const itemsHover = useSelector(AppSelectors.appItemsHoverSelector)
+  const itemHover = useSelector(AppSelectors.appItemHoverSelector)
 
   // Events
   const onMouseEnter = () => {
-    dispatch(AppActions.appItemsHover({
-      itemId: item.id,
+    dispatch(AppActions.appItemHover({
+      id: item.id,
       indexRow,
       indexCol,
     }))
   }
   const onMouseLeave = () => {
-    dispatch(AppActions.appItemsHover({
-      itemId: null,
+    dispatch(AppActions.appItemHover({
+      id: null,
       indexRow: null,
       indexCol: null,
     }))
@@ -108,11 +108,11 @@ const ItemsTableCell = ({ item, indexRow, indexCol }) => {
   } else {
     className.push('basic')
   }
-  if (indexRow === itemsHover.indexRow && indexCol === itemsHover.indexCol) {
+  if (indexRow === itemHover.indexRow && indexCol === itemHover.indexCol) {
     className.push('highlight')
   } else if (
-    (indexRow === itemsHover.indexRow && itemsHover.indexRow !== 0) ||
-    (indexCol === itemsHover.indexCol && itemsHover.indexCol !== 0)
+    (indexRow === itemHover.indexRow && itemHover.indexRow !== 0) ||
+    (indexCol === itemHover.indexCol && itemHover.indexCol !== 0)
   ) {
     className.push('highlight-partial')
   }

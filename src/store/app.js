@@ -2,35 +2,92 @@ import {
   createSlice
 } from '@reduxjs/toolkit'
 
-import {
-  DataStates
-} from 'lib/constants'
-
 export const initialState = () => ({
-  itemsHover: {}
+  classeHover: {},
+  championHover: {},
+  itemHover: {},
+  originHover: {},
 })
 
 // START //
 
-export const appItemsHover = (state, { payload }) => {
-  if (!state.itemsHover.locked) {
-    state.itemsHover = {
-      itemId: payload.itemId,
+export const appChampionHover = (state, { payload }) => {
+  if (!state.championHover.locked) {
+    state.championHover = {
+      id: payload.id,
+      origins: payload.origins,
+      classes: payload.classes,
+    }
+  }
+}
+export const appChampionSelect = (state, { payload }) => {
+  if (payload.championId) {
+    state.championHover = {
+      locked: true,
+      id: payload.id,
+      origins: payload.origins,
+      classes: payload.classes,
+    }
+  } else {
+    state.itemHover.locked = false
+  }
+}
+
+export const appClasseHover = (state, { payload }) => {
+  if (!state.classeHover.locked) {
+    state.classeHover = {
+      id: payload.id
+    }
+  }
+}
+export const appClasseSelect = (state, { payload }) => {
+  if (payload.classeId) {
+    state.classeHover = {
+      locked: true,
+      id: payload.id
+    }
+  } else {
+    state.itemHover.locked = false
+  }
+}
+
+export const appItemHover = (state, { payload }) => {
+  if (!state.itemHover.locked) {
+    state.itemHover = {
+      id: payload.id,
       indexRow: payload.indexRow,
       indexCol: payload.indexCol,
     }
   }
 }
-export const appItemsSelect = (state, { payload }) => {
+export const appItemSelect = (state, { payload }) => {
   if (payload.itemId) {
-    state.itemsHover = {
+    state.itemHover = {
       locked: true,
-      itemId: payload.itemId,
+      id: payload.id,
       indexRow: payload.indexRow,
       indexCol: payload.indexCol
     }
   } else {
-    state.itemsHover.locked = false
+    state.itemHover.locked = false
+  }
+}
+
+export const appOriginHover = (state, { payload }) => {
+  if (!state.originHover.locked) {
+    state.originHover = {
+      id: payload.id,
+    }
+  }
+}
+export const appOriginSelect = (state, { payload }) => {
+  if (payload.originId) {
+    state.originHover = {
+      locked: true,
+      id: payload.id,
+    }
+  } else {
+    state.itemHover.locked = false
   }
 }
 
@@ -41,15 +98,24 @@ const appSlice = createSlice({
   initialState: initialState(),
 
   reducers: {
-    appItemsHover,
-    appItemsSelect,
+    appChampionHover,
+    appChampionSelect,
+    appClasseHover,
+    appClasseSelect,
+    appItemHover,
+    appItemSelect,
+    appOriginHover,
+    appOriginSelect,
   },
 })
 
 appSlice.selectors = {
   appSelector: (state) => state.app,
 
-  appItemsHoverSelector: (state) => appSlice.selectors.appSelector(state).itemsHover,
+  appChampionHoverSelector: (state) => appSlice.selectors.appSelector(state).championHover,
+  appClasseHoverSelector: (state) => appSlice.selectors.appSelector(state).classeHover,
+  appItemHoverSelector: (state) => appSlice.selectors.appSelector(state).itemHover,
+  appOriginHoverSelector: (state) => appSlice.selectors.appSelector(state).originHover,
 }
 
 export const {

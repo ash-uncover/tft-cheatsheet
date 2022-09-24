@@ -1,298 +1,357 @@
 {
   "champions": [{
     "id": "AOSHIN",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Aoshin",
+    "classes": ["DRAGON"],
+    "origins": ["TEMPEST"],
+    "tier": 8
   }, {
     "id": "APHELIOS",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Aphelios",
+    "classes": ["CANNONEER"],
+    "origins": ["DARKFLIGHT"],
+    "tier": 2
   }, {
     "id": "AURELION_SOL",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Aurelion Sol",
+    "classes": ["DRAGON","EVOKER"],
+    "origins": ["ASTRAL"],
+    "tier": 8
   }, {
     "id": "BARD",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Bard",
+    "classes": ["BARD","MYSTIC"],
+    "origins": ["GUILD"],
+    "tier": 5
   }, {
     "id": "BRAUM",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Braum",
+    "classes": ["GUARDIAN"],
+    "origins": ["SCALESCORN"],
+    "tier": 2
   }, {
     "id": "DAEJA",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Daeja",
+    "classes": ["DRAGON"],
+    "origins": ["MIRAGE"],
+    "tier": 7
   }, {
     "id": "DIANA",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Diana",
+    "classes": ["ASSASSIN"],
+    "origins": ["SCALESCORN"],
+    "tier": 3
   }, {
     "id": "EZREAL",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Ezreal",
+    "classes": ["SWIFTSHOT"],
+    "origins": ["TEMPEST"],
+    "tier": 1
   }, {
     "id": "GNAR",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Gnar",
+    "classes": ["SHAPESHIFTER"],
+    "origins": ["JADE"],
+    "tier": 2
   }, {
     "id": "GRAVES",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Graves",
+    "classes": ["CANNONEER"],
+    "origins": ["TEMPEST"],
+    "tier": 4
   }, {
     "id": "HECARIM",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Hecarim",
+    "classes": ["CAVALIER"],
+    "origins": ["RAGEWING"],
+    "tier": 4
   }, {
     "id": "IDAS",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Idas",
+    "classes": ["DRAGON","GUARDIAN"],
+    "origins": ["SHIMMERSCALE"],
+    "tier": 7
   }, {
     "id": "JAX",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Jax",
+    "classes": ["BRUISER"],
+    "origins": ["SHIMMERSCALE","JADE"],
+    "tier": 2
   }, {
     "id": "JAYCE",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Jayce",
+    "classes": ["SHAPESHIFTER"],
+    "origins": ["GUILD"],
+    "tier": 4
   }, {
     "id": "KAISA",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Kaisa",
+    "classes": ["DRAGONMANCER"],
+    "origins": ["LAGOON"],
+    "tier": 2
   }, {
     "id": "KARMA",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Karma",
+    "classes": ["DRAGONMANCER"],
+    "origins": ["JADE"],
+    "tier": 1
   }, {
     "id": "LEE_SIN",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Lee Sin",
+    "classes": ["DRAGONMANCER"],
+    "origins": ["TEMPEST"],
+    "tier": 3
   }, {
     "id": "LEONA",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Leona",
+    "classes": ["GUARDIAN"],
+    "origins": ["MIRAGE"],
+    "tier": 1
   }, {
     "id": "LILLIA",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Lillia",
+    "classes": ["CAVALIER","MAGE"],
+    "origins": ["SCALESCORN"],
+    "tier": 2
   }, {
     "id": "LUX",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Lux",
+    "classes": ["MAGE"],
+    "origins": ["ASTRAL"],
+    "tier": 2
   }, {
     "id": "MALPHITE",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Malphite",
+    "classes": ["BRUISER"],
+    "origins": ["LAGOON"],
+    "tier": 1
   }, {
     "id": "NASUS",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Nasus",
+    "classes": ["GUARDIAN"],
+    "origins": ["SHIMMERSCALE"],
+    "tier": 1
   }, {
     "id": "NIDALEE",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Nidalee",
+    "classes": ["SHAPESHIFTER"],
+    "origins": ["ASTRAL"],
+    "tier": 1
   }, {
     "id": "NILAH",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Nilah",
+    "classes": ["ASSASSIN"],
+    "origins": ["LAGOON"],
+    "tier": 4
   }, {
     "id": "NOMSY",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Nomsy",
+    "classes": ["DRAGON"],
+    "origins": ["PRODIGY"],
+    "tier": 6
   }, {
     "id": "NUNU",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Nunu",
+    "classes": ["CAVALIER"],
+    "origins": ["MIRAGE"],
+    "tier": 3
   }, {
     "id": "OLAF",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Olaf",
+    "classes": ["BRUISER","WARRIOR"],
+    "origins": ["SCALESCORN"],
+    "tier": 3
   }, {
     "id": "PANTHEON",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Pantheon",
+    "classes": ["WARRIOR"],
+    "origins": ["WHISPER"],
+    "tier": 4
   }, {
     "id": "QIYANA",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Qiyana",
+    "classes": ["ASSASSIN"],
+    "origins": ["TEMPEST"],
+    "tier": 2
   }, {
     "id": "RAKAN",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Rakan",
+    "classes": ["GUARDIAN","MYSTIC"],
+    "origins": ["RAGEWING"],
+    "tier": 3
   }, {
     "id": "RELL",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Rell",
+    "classes": ["CAVALIER"],
+    "origins": ["DARKFLIGHT"],
+    "tier": 2
   }, {
     "id": "RENGAR",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Rengar",
+    "classes": ["ASSASSIN"],
+    "origins": ["DARKFLIGHT"],
+    "tier": 3
   }, {
     "id": "SEJUANI",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Sejuani",
+    "classes": ["CAVALIER"],
+    "origins": ["GUILD"],
+    "tier": 1
   }, {
     "id": "SENNA",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Senna",
+    "classes": ["CANNONEER"],
+    "origins": ["RAGEWING"],
+    "tier": 1
   }, {
     "id": "SERAPHINE",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Seraphine",
+    "classes": ["EVOKER","MYSTIC"],
+    "origins": ["LAGOON"],
+    "tier": 3
   }, {
     "id": "SETT",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Sett",
+    "classes": ["DRAGONMANCER"],
+    "origins": ["RAGEWING"],
+    "tier": 1
   }, {
     "id": "SHI_OH_YU",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Shi Oh Yu",
+    "classes": ["DRAGON","MYSTIC"],
+    "origins": ["JADE"],
+    "tier": 7
   }, {
     "id": "SHYVANA",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Shyvana",
+    "classes": ["DRAGON","SHAPESHIFTER"],
+    "origins": ["RAGEWING"],
+    "tier": 8
   }, {
     "id": "SKARNER",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Skarner",
+    "classes": ["BRUISER"],
+    "origins": ["ASTRAL"],
+    "tier": 1
   }, {
     "id": "SOHM",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Sohm",
+    "classes": ["DRAGON","MAGE"],
+    "origins": ["LAGOON"],
+    "tier": 7
   }, {
     "id": "SORAKA",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Soraka",
+    "classes": ["STARCALLER"],
+    "origins": ["JADE"],
+    "tier": 5
   }, {
     "id": "SWAIN",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Swain",
+    "classes": ["DRAGON"],
+    "origins": ["DARKFLIGHT"],
+    "tier": 7
   }, {
     "id": "SYFEN",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Syfen",
+    "classes": ["DRAGON","BRUISER"],
+    "origins": ["WHISPER"],
+    "tier": 7
   }, {
     "id": "SYLAS",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Sylas",
+    "classes": ["BRUISER","MAGE"],
+    "origins": ["WHISPER"],
+    "tier": 3
   }, {
     "id": "TALIYAH",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Taliyah",
+    "classes": ["MAGE"],
+    "origins": ["LAGOON"],
+    "tier": 1
   }, {
     "id": "TERRA",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Terra",
+    "classes": ["DRAGON"],
+    "origins": ["MONOLITH"],
+    "tier": 8
   }, {
     "id": "TWITCH",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Twitch",
+    "classes": ["SWIFTSHOT"],
+    "origins": ["GUILD"],
+    "tier": 2
   }, {
     "id": "VARUS",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Varus",
+    "classes": ["SWIFTSHOT"],
+    "origins": ["ASTRAL"],
+    "tier": 3
   }, {
     "id": "VLADIMIR",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Vladimir",
+    "classes": ["MAGE"],
+    "origins": ["ASTRAL"],
+    "tier": 1
   }, {
     "id": "VOLIBEAR",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Volibear",
+    "classes": ["DRAGONMANCER"],
+    "origins": ["SHIMMERSCALE"],
+    "tier": 3
   }, {
     "id": "WU_KONG",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Wu Kong",
+    "classes": ["WARRIOR"],
+    "origins": ["JADE"],
+    "tier": 1
   }, {
     "id": "XAYAH",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Xayah",
+    "classes": ["SWIFTSHOT"],
+    "origins": ["RAGEWING"],
+    "tier": 4
   }, {
     "id": "YASUO",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Yasuo",
+    "classes": ["WARRIOR","DRAGONMANCER"],
+    "origins": ["MIRAGE"],
+    "tier": 5
   }, {
     "id": "YONE",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Yone",
+    "classes": ["WARRIOR"],
+    "origins": ["MIRAGE"],
+    "tier": 2
   }, {
     "id": "ZAC",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Zac",
+    "classes": ["GUARDIAN"],
+    "origins": ["LAGOON"],
+    "tier": 2
   }, {
     "id": "ZERI",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Zeri",
+    "classes": ["CANNONEER"],
+    "origins": ["LAGOON"],
+    "tier": 3
   }, {
     "id": "ZIPPY",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Zippy",
+    "classes": ["DRAGON"],
+    "origins": ["GUILD"],
+    "tier": 6
   }, {
     "id": "ZOE",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Zoa",
+    "classes": ["MAGE","SPELL_THIEF"],
+    "origins": ["SHIMMERSCALE"],
+    "tier": 5
   }, {
     "id": "ZYRA",
-    "name": "",
-    "class": [],
-    "origin": []
+    "name": "Zyra",
+    "classes": ["EVOKER"],
+    "origins": ["WHISPER"],
+    "tier": 2
   }]
 }

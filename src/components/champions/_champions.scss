@@ -7,6 +7,8 @@
 
   .champions-content {
     max-width: 700px;
+    background-color: #222;
+    padding: 2rem;
 
     .champions-section+.champions-section {
       margin-top: 1rem;
@@ -41,15 +43,77 @@
       .champion-tile {
         cursor: pointer;
         padding: 3px;
-        border-radius: 5px;
         width: 10%;
         aspect-ratio: 1;
         >.champion-tile-content {
+          border-radius: 5px;
+          overflow: hidden;
           >img {
             border-radius: 4px;
             height: 100%;
             width: 100%;
           }
+        }
+      }
+    }
+
+    &:hover {
+      .trait-tiles {
+        .trait-tile.highlight {
+          border-radius: 50%;
+          transform: scale(1.5);
+          &.classe {
+            box-shadow: 0 0 5px 2px rgb(100 255 100 / 90%);
+            background: radial-gradient(closest-side, transparent, #64FF64);
+          }
+          &.origin {
+            box-shadow: 0 0 5px 2px rgb(100 100 255 / 90%);
+            background: radial-gradient(closest-side, transparent, #6464FF);
+          }
+        }
+      }
+      .champion-tiles {
+        .champion-tile.highlight {
+          &.partial-classe {
+            opacity: 0.3;
+            .champion-tile-content {
+              box-shadow: 0 0 5px 2px rgb(100 255 100 / 90%);
+            }
+          }
+          &.partial-origin {
+            opacity: 0.3;
+            .champion-tile-content {
+              box-shadow: 0 0 5px 2px rgb(100 100 255 / 90%);
+            }
+          }
+          &.partial-classe.partial-origin {
+            opacity: 0.3;
+            .champion-tile-content {
+              box-shadow: 0 0 5px 2px rgb(255 215 0 / 85%);
+            }
+          }
+          &.full-classe {
+            opacity: 0.8;
+            .champion-tile-content {
+              box-shadow: 0 0 5px 2px rgb(100 255 100 / 90%);
+            }
+          }
+          &.full-origin {
+            opacity: 0.8;
+            .champion-tile-content {
+              box-shadow: 0 0 5px 2px rgb(100 100 255 / 90%);
+            }
+          }
+          &.full {
+            opacity: 1;
+            .champion-tile-content {
+              box-shadow: 0 0 5px 2px rgb(255 215 0 / 85%);
+            }
+          }
+        }
+        .champion-tile:not(.highlight) {
+          opacity: 0.2;
+          filter: grayscale(1);
         }
       }
     }
