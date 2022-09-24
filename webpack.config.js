@@ -1,106 +1,89 @@
 /* eslint-disable */
 
-const CleanWebpackPlugin = require('clean-webpack-plugin')
-const webpack = require('webpack')
 const path = require('path')
 
-const node_modules = path.resolve(__dirname, 'node_modules')
-const pathToReact = path.resolve(node_modules, 'react/dist/react.min.js')
+const DIR_DIST = path.resolve(__dirname, 'dist')
+const DIR_SRC = path.resolve(__dirname, 'src')
+const DIR_NODE_MODULES = path.resolve(__dirname, 'node_modules')
 
-const pathsName = {
-  DIST: 'dist',
-  ASSETS: 'assets',
-  NODE_MODULES: 'node_modules',
-  SRC: 'src'
-}
-const paths = {
-  DIST: path.resolve(__dirname, pathsName.DIST),
-  ASSETS: path.resolve(__dirname, pathsName.ASSETS),
-  NODE_MODULES: path.resolve(__dirname, pathsName.NODE_MODULES),
-  SRC: path.resolve(__dirname, pathsName.SRC)
-}
+const CopyPlugin = require('copy-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+    entry: path.resolve(DIR_SRC, 'index.js'),
 
-  context: __dirname,
+    output: {
+        clean: true,
+        path: DIR_DIST,
+        filename: '[name].bundle.js',
+        publicPath: '/',
+    },
 
-  entry: path.resolve(paths.SRC, './index.jsx'),
+    resolve: {
+        modules: ['node_modules', './src'],
+        extensions: ['.js', '.jsx'],
+    },
 
-  node: {
-    console: true,
-    fs: 'empty',
-    net: 'empty',
-    tls: 'empty'
-  },
-
-  devtool: 'eval-source-map',
-
-  plugins: [
-    new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: [pathsName.DIST]
-    })
-  ],
-
-  output: {
-    path: paths.DIST,
-    filename: 'bundle.js'
-  },
-
-  devServer: {
-    host: '0.0.0.0',
-    historyApiFallback: true,
-    port: 8080
-  },
-
-  optimization: {
-    minimizer: []
-  },
-
-  resolve: {
-    modules: [
-      'node_modules',
-      './src',
-      './assets'
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            title: 'Wait App',
+        }),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, '_redirects'),
+                    to: '.'
+                },
+            ],
+        }),
     ],
-    extensions: [
-      '.js',
-      '.json',
-      '.jsx'
-    ]
-  },
 
-  module: {
-    rules: [
-      {
-        test: /.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader'
-      }, {
-        test: /node_modules\/jquery\/.+\.(jsx|js)$/,
-        loader: 'imports?jQuery=jquery,$=jquery,this=>window'
-      }, {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader'
-      }, {
-        test: /\.scss$/,
-        loader: 'style-loader!css-loader!sass-loader'
-      }, {
-        test: /\.(png|jpg|svg)$/,
-        loader: 'file-loader?name=images/[name].[ext]'
-      }, {
-        test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url-loader?mimetype=application/vnd.ms-fontobject'
-      }, {
-        test: /\.woff/,
-        loader: 'url-loader?mimetype=application/font-woff'
-      }, {
-        test: /\.woff2/,
-        loader: 'url-loader?mimetype=application/font-woff2'
-      }, {
-        test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url-loader?mimetype=application/x-font-ttf'
-      }
-    ],
-    noParse: [pathToReact]
-  }
+    devServer: {
+        static: {
+            directory: path.join(__dirname, 'public'),
+        },
+        compress: true,
+        port: 8080,
+        historyApiFallback: true,
+    },
+
+    module: {
+        rules: [
+            {
+                test: /.(jsx|js)$/,
+                include: DIR_SRC,
+                exclude: DIR_NODE_MODULES,
+                use: [
+                    { loader: 'babel-loader' },
+                ],
+            },
+            {
+                test: /\.(scss|css)$/,
+                use: [
+                    { loader: 'style-loader' },
+                    { loader: 'css-loader' },
+                    { loader: 'sass-loader' },
+                ],
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'images/[name][ext][query]'
+                },
+            },
+            {
+                test: /\.(mp3|flac)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'sound/[name][ext][query]'
+                }
+            },
+            {
+                test: /\.(_redirects)$/i,
+                type: 'asset/resource',
+            },
+        ],
+    },
 }
