@@ -10,7 +10,7 @@ import store from 'store'
 
 import Root from 'routes/__layout'
 
-import './index.css'
+import './_index.scss'
 
 const container = document.getElementById('react-root')
 const root = createRoot(container)

@@ -18,9 +18,12 @@ import {
 
 import DataStates from 'lib/constants/DataStates'
 
+import AppHeader from 'components/app/AppHeader'
 import HomeError from 'components/home/HomeError'
 import HomeLoading from 'components/home/HomeLoading'
 import RouteHome from 'routes'
+import RouteItems from 'routes/items'
+import RouteChampions from 'routes/champions'
 
 import * as ServiceHelper from 'services/ServiceHelper'
 
@@ -42,11 +45,19 @@ const Root = () => {
     }
     case DataStates.SUCCESS: {
       return (
-        <Router hashType='noslash'>
-          <Routes>
-            <Route path='/' element={<RouteHome />} />
-          </Routes>
-        </Router>
+        <>
+          <Router hashType='noslash'>
+            <AppHeader />
+            <Routes>
+              <Route path='/' element={<RouteHome />} />
+              <Route path='/items' element={<RouteItems />} />
+              <Route path='/champions' element={<RouteChampions />} />
+            </Routes>
+            <div className='app-footer'>
+              footer
+            </div>
+          </Router>
+        </>
       )
     }
     default: {

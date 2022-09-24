@@ -1,113 +1,95 @@
-.items-page {
+.items {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
-  background: black;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 
   .items-table {
-    background: black;
+    --margin: 3px;
+
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: var(--margin);
 
     .items-table-row {
       display: flex;
+      align-items: center;
+      justify-content: center;
+
 
       .items-table-cell {
-        margin: 2px;
-        width: 56px;
-        height: 56px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: opacity 0.2s, background-color 0.1s, transform 0.25s;
-        border-radius: 8px;
+        padding: var(--margin);
+        --size: 54px;
+        height: var(--size);
+        width: var(--size);
 
-        &.first-row {
-          margin-bottom: 0.75rem;
-        }
-        &.first-col {
-          margin-right: 0.75rem;
-        }
-        &.hovered-row {
-          opacity: 0.8;
-          z-index: 2;
-        }
-        &.hovered-col {
-          opacity: 0.8;
-          z-index: 2;
-        }
-        &.hovered {
-          border-radius: 10px;
-          background-color: lightgrey;
-          transform: scale(1.25);
-          z-index: 3;
-        }
-        &.selected {
-          border-radius: 10px;
-          background-color: gold;
-          transform: scale(1.25);
-          z-index: 3;
-        }
-        &.hovered-header {
-          border-radius: 9px;
-          background-color: grey;
-          transform: scale(1.05);
-          z-index: 3;
-        }
-        &.unselected {
-          opacity: 0.5;
+        .items-table-cell-content {
+          border-radius: 5px;
+          overflow: hidden;
+          box-shadow: 0 0 5px -1px rgb(255 255 255 / 50%);
+
+          >img {
+            border-radius: 4px;
+            height: var(--size);
+            width: var(--size);
+          }
         }
 
-        img {
-          width: 50px;
-          height: 50px;
-          border-radius: 8px;
+        &:not(.empty) {
+          cursor: pointer;
+        }
+
+        &.empty {
+          pointer-events: none;
+          .items-table-cell-content {
+            box-shadow: none !important;
+          }
         }
       }
     }
-  }
 
-  .item-details {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    background: black;
-    min-width: 375px;
-    max-width: 475px;
-    &.invisible {
-      opacity: 0;
-    }
-    .container-content {
-      height: 80%;
-      background: rgba(25,25,75,1);
-      padding: 1rem 1.5rem;
-      border-radius: 15px;
-    }
-    .item-details-title {
-      font-size: 1.5rem;
-      text-align: center;
-      line-height: 2rem;
-      height: 2rem;
-    }
-    .item-details-image {
-      text-align: center;
-      padding: 1rem;
-      img {
-        width: 75px;
-        height: 75px;
-      }
-    }
-    .item-details-property {
-      display: flex;
-      margin-bottom: 0.75rem;
-      .item-details-property-name {
-        color: grey;
-        width: 125px;
-      }
-      .item-details-property-value {
-        width: 250px;
+    &:hover {
+      .items-table-row {
+        .items-table-cell {
+          filter: grayscale(1);
+          opacity: 0.25;
+
+          &.basic {
+            opacity: 0.5;
+          }
+
+          .items-table-cell-content {
+            box-shadow: none;
+          }
+
+          &.highlight {
+            opacity: 1;
+            filter: grayscale(0);
+
+            .items-table-cell-content {
+              box-shadow: 0 0 5px 2px rgb(255 215 0 / 85%);
+            }
+          }
+
+          &.highlight-partial {
+            opacity: 1;
+
+            .items-table-cell-content {
+              box-shadow: 0 0 5px 0px rgb(255 255 255 / 50%);
+            }
+
+            &.basic {
+              filter: grayscale(0);
+
+              .items-table-cell-content {
+                box-shadow: 0 0 5px 2px rgb(80 80 255 / 75%);
+              }
+            }
+          }
+        }
       }
     }
   }
