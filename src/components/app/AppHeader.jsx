@@ -35,6 +35,24 @@ const AppHeader = () => {
       >
         champions
       </Link>
+      <Link
+        to='/builds'
+        className={location.pathname.startsWith('/builds') ? 'selected' : null}
+      >
+        builds
+      </Link>
+      <Link
+        to='/compos'
+        className={location.pathname.startsWith('/compos') ? 'selected' : null}
+      >
+        compos
+      </Link>
+      <Link
+        to='/builder'
+        className={location.pathname.startsWith('/builder') ? 'selected' : null}
+      >
+        builder
+      </Link>
     </div>
   )
 }

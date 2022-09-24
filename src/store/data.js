@@ -9,10 +9,12 @@ import {
 export const initialState = () => ({
   status: DataStates.NEVER,
   error: null,
-  items: [],
+  builds: [],
   champions: [],
-  origins: [],
   classes: [],
+  compos: [],
+  items: [],
+  origins: [],
 })
 
 // START //
@@ -23,10 +25,12 @@ export const dataLoadRequest = (state, { payload }) => {
 export const dataLoadSuccess = (state, { payload }) => {
   state.status = DataStates.SUCCESS
   state.error = null
-  state.items = payload.items
+  state.builds = payload.builds
   state.champions = payload.champions
-  state.origins = payload.origins
   state.classes = payload.classes
+  state.compos = payload.compos
+  state.items = payload.items
+  state.origins = payload.origins
 }
 export const dataLoadFailure = (state, { payload }) => {
   state.status = DataStates.FAILURE
@@ -52,10 +56,15 @@ dataSlice.selectors = {
   dataStatusSelector: (state) => dataSlice.selectors.dataSelector(state).status,
   dataErrorSelector: (state) => dataSlice.selectors.dataSelector(state).error,
 
+  dataBuildsSelector: (state) => dataSlice.selectors.dataSelector(state).builds,
   dataChampionsSelector: (state) => dataSlice.selectors.dataSelector(state).champions,
   dataClassesSelector: (state) => dataSlice.selectors.dataSelector(state).classes,
+  dataComposSelector: (state) => dataSlice.selectors.dataSelector(state).compos,
   dataItemsSelector: (state) => dataSlice.selectors.dataSelector(state).items,
   dataOriginsSelector: (state) => dataSlice.selectors.dataSelector(state).origins,
+
+  dataChampionSelector: (id) => (state) => dataSlice.selectors.dataSelector(state).champions.find(champion => champion.id === id),
+  dataItemSelector: (id) => (state) => dataSlice.selectors.dataSelector(state).items.find(item => item.id === id),
 }
 
 export const {

@@ -24,6 +24,9 @@ import HomeLoading from 'components/home/HomeLoading'
 import RouteHome from 'routes'
 import RouteItems from 'routes/items'
 import RouteChampions from 'routes/champions'
+import RouteBuilds from 'routes/builds'
+import RouteCompos from 'routes/compos'
+import RouteBuilder from 'routes/builder'
 
 import * as ServiceHelper from 'services/ServiceHelper'
 
@@ -52,6 +55,9 @@ const Root = () => {
               <Route path='/' element={<RouteHome />} />
               <Route path='/items' element={<RouteItems />} />
               <Route path='/champions' element={<RouteChampions />} />
+              <Route path='/builds' element={<RouteBuilds />} />
+              <Route path='/compos' element={<RouteCompos />} />
+              <Route path='/builder' element={<RouteBuilder />} />
             </Routes>
             <div className='app-footer'>
               footer
