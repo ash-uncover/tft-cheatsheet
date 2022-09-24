@@ -25,30 +25,32 @@ const Champions = () => {
   console.log(origins)
   return (
     <div className='app-content champions'>
-      <div className='origin-tiles'>
-        {origins.map(origin => (
-          <OriginTile
-            key={origin.id}
-            origin={origin}
-          />
-        ))}
-      </div>
-      <div className='classe-tiles'>
-        {classes.map(classe => (
-          <ClasseTile
-            key={classe.id}
-            classe={classe}
-          />
-        ))}
-      </div>
-      <div className='champion-tiles'>
-        {champions.map((champion, index) => (
-          <ChampionTile
-            key={champion.id}
-            champion={champion}
-            index={index}
-          />
-        ))}
+      <div className='champions-content'>
+        <div className='champions-section trait-tiles'>
+          {origins.map(origin => (
+            <OriginTile
+              key={origin.id}
+              origin={origin}
+            />
+          ))}
+        </div>
+        <div className='champions-section trait-tiles'>
+          {classes.map(classe => (
+            <ClasseTile
+              key={classe.id}
+              classe={classe}
+            />
+          ))}
+        </div>
+        <div className='champions-section champion-tiles'>
+          {champions.map((champion, index) => (
+            <ChampionTile
+              key={champion.id}
+              champion={champion}
+              index={index}
+            />
+          ))}
+        </div>
       </div>
     </div>
   )
@@ -56,8 +58,8 @@ const Champions = () => {
 
 const OriginTile = ({ origin }) => {
   return (
-    <div className='origin-tile'>
-      <div className='origin-tile-content'>
+    <div className='trait-tile'>
+      <div className='trait-tile-content'>
         <img src={`images/origins/${origin.id}.svg`} />
       </div>
     </div>
@@ -66,8 +68,8 @@ const OriginTile = ({ origin }) => {
 
 const ClasseTile = ({ classe }) => {
   return (
-    <div className='classe-tile'>
-      <div className='classe-tile-content'>
+    <div className='trait-tile'>
+      <div className='trait-tile-content'>
         <img src={`images/classes/${classe.id}.svg`} />
       </div>
     </div>
