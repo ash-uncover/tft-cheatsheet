@@ -1,7 +1,50 @@
 .champions {
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
+
+  --trait-size: 24px;
+  --trait-gap: 12px;
+
+  .origin-tiles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--trait-gap);
+    max-width: 700px;
+    >.origin-tile {
+      cursor: pointer;
+      width: 5%;
+      aspect-ratio: 1;
+      >.origin-tile-content {
+        >img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .classe-tiles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--trait-gap);
+    max-width: 700px;
+    >.classe-tile {
+      cursor: pointer;
+      width: 4%;
+      aspect-ratio: 1;
+      >.classe-tile-content {
+        >img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
 
   .champion-tiles {
     display: flex;
@@ -9,11 +52,11 @@
     max-width: 700px;
 
     .champion-tile {
+      cursor: pointer;
       padding: 3px;
       border-radius: 5px;
-      --size: 54px;
-      height: 10%;
       width: 10%;
+      aspect-ratio: 1;
       >.champion-tile-content {
         >img {
           border-radius: 4px;
