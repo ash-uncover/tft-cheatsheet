@@ -106,6 +106,8 @@ const ItemsTableCell = ({ item, indexRow, indexCol }) => {
   }
   if (item?.isComplex) {
     className.push('complex')
+  } else {
+    className.push('basic')
   }
   if (indexRow === itemsHover.indexRow && indexCol === itemsHover.indexCol) {
     className.push('highlight')
