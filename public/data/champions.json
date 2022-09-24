@@ -1,238 +1,297 @@
 {
   "champions": [{
-    "name": "AOSHIN",
+    "id": "AOSHIN",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "APHELIOS",
+    "id": "APHELIOS",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AURELION_SOL",
+    "id": "AURELION_SOL",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "BARD",
+    "id": "BARD",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "BRAUM",
+    "id": "BRAUM",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "DAEJA",
+    "id": "DAEJA",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "DIANA",
+    "id": "DIANA",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "EZREAL",
+    "id": "EZREAL",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "GNAR",
+    "id": "GNAR",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "GRAVES",
+    "id": "GRAVES",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "HECARIM",
+    "id": "HECARIM",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "IDAS",
+    "id": "IDAS",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "JAX",
+    "id": "JAX",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "JAYCE",
+    "id": "JAYCE",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "KAISA",
+    "id": "KAISA",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "KARMA",
+    "id": "KARMA",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "LEE_SIN",
+    "id": "LEE_SIN",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "LEONA",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "LILLIA",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "LUX",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "MALPHITE",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "NASUS",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "NIDALEE",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "NILAH",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "NOMSY",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "NUNU",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "OLAF",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "PANTHEON",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "QIYANA",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "RAKAN",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "RELL",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "RENGAR",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "SEJUANI",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "SENNA",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "SERAPHINE",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "SETT",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "SHI_OH_YU",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "SHYVANA",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "SKARNER",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "SOHM",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "SORAKA",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "SWAIN",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "SYFEN",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "SYLAS",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "TALIYAH",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "TERRA",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "TWITCH",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "VARUS",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "VLADIMIR",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "VOLIBEAR",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "WU_KONG",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "XAYAH",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "YASUO",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "YONE",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "ZAC",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "ZERI",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "ZIPPY",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "ZOE",
+    "name": "",
     "class": [],
     "origin": []
   }, {
-    "name": "AOSHIN",
+    "id": "ZYRA",
+    "name": "",
     "class": [],
     "origin": []
   }]

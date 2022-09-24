@@ -75,14 +75,15 @@
           }
 
           &.highlight-partial {
-            opacity: 1;
+            opacity: 0.9;
 
             .items-table-cell-content {
               box-shadow: 0 0 5px 0px rgb(255 255 255 / 50%);
             }
 
             &.basic {
-              filter: grayscale(0);
+              opacity: 1;
+              filter: grayscale(0) sepia(1);
 
               .items-table-cell-content {
                 box-shadow: 0 0 5px 2px rgb(80 80 255 / 75%);

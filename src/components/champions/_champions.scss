@@ -1,6 +1,26 @@
 .champions {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .champion-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+
+    .champion-tile {
+      padding: 3px;
+      border-radius: 5px;
+      --size: 54px;
+      height: 10%;
+      width: 10%;
+      >.champion-tile-content {
+        >img {
+          border-radius: 4px;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
 }
