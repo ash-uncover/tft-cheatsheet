@@ -111,7 +111,10 @@ const ItemsTableCell = ({ item, indexRow, indexCol }) => {
   }
   if (indexRow === itemsHover.indexRow && indexCol === itemsHover.indexCol) {
     className.push('highlight')
-  } else if (indexRow === itemsHover.indexRow || indexCol === itemsHover.indexCol) {
+  } else if (
+    (indexRow === itemsHover.indexRow && itemsHover.indexRow !== 0) ||
+    (indexCol === itemsHover.indexCol && itemsHover.indexCol !== 0)
+  ) {
     className.push('highlight-partial')
   }
   return (
@@ -120,7 +123,11 @@ const ItemsTableCell = ({ item, indexRow, indexCol }) => {
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      {item && <img src={`images/items/${item.image}`} />}
+      {item && (
+        <div className='items-table-cell-content'>
+          <img src={`images/items/${item.image}`} />
+        </div>
+      )}
     </div>
   )
 }
