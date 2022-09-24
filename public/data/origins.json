@@ -1,5 +1,29 @@
 {
-  "origins": [
-    { "name": "origin" }
-  ]
+  "origins": [{
+    "id": "ASTRAL"
+  } ,{
+    "id": "DARKFLIGHT"
+  } ,{
+    "id": "GUILD"
+  } ,{
+    "id": "JADE"
+  } ,{
+    "id": "LAGOON"
+  } ,{
+    "id": "MIRAGE"
+  } ,{
+    "id": "MONOLITH"
+  } ,{
+    "id": "PRODIGY"
+  } ,{
+    "id": "RAGEWING"
+  } ,{
+    "id": "SCALESCORN"
+  } ,{
+    "id": "SHIMMERSCALE"
+  } ,{
+    "id": "TEMPEST"
+  } ,{
+    "id": "WHISPER"
+  }]
 }

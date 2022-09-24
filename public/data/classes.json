@@ -1,5 +1,35 @@
 {
-  "classes": [
-    { "name": "class" }
-  ]
+  "classes": [{
+    "id": "ASSASSIN"
+  } ,{
+    "id": "BARD"
+  } ,{
+    "id": "BRUISER"
+  } ,{
+    "id": "CANNONEER"
+  } ,{
+    "id": "CAVALIER"
+  } ,{
+    "id": "DRAGON"
+  } ,{
+    "id": "DRAGONMANCER"
+  } ,{
+    "id": "EVOKER"
+  } ,{
+    "id": "GUARDIAN"
+  } ,{
+    "id": "MAGE"
+  } ,{
+    "id": "MYSTIC"
+  } ,{
+    "id": "SHAPESHIFTER"
+  } ,{
+    "id": "SPELL_THIEF"
+  } ,{
+    "id": "STARCALLER"
+  } ,{
+    "id": "SWIFTSHOT"
+  } ,{
+    "id": "WARRIOR"
+  }]
 }
