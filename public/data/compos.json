@@ -1,3 +1,9 @@
 {
-  "compos": [{}]
+  "compos": [{
+    "name": "Ragewing Guild Xayah",
+    "champions": ["SEJUANI","TWITCH","RAKAN","HECARIM","JAYCE","XAYAH","BARD","SHYVANA"]
+  }, {
+    "name": "Terra Shyvana Ao shin",
+    "champions": ["LEE_SIN","RAKAN","BARD","AOSHIN","SHYVANA","TERRA"]
+  }]
 }
