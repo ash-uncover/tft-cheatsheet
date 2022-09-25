@@ -74,7 +74,7 @@
   }, {
     "id": "GNAR",
     "items": [
-      { "id": "THIEF_GLOVES", "value": 7.48 },
+      { "id": "THIEFS_GLOVES", "value": 7.48 },
       { "id": "SUNFIRE_CAP", "value": 7.17 },
       { "id": "PROTECTOR_VOW", "value": 5.14 },
       { "id": "ZEKE_HERALD", "value": 5.03 },
@@ -96,7 +96,7 @@
       { "id": "MORELLONOMICON", "value": 6.37 },
       { "id": "SUNFIRE_CAP", "value": 5.80 },
       { "id": "STONEPLATE", "value": 5.17 },
-      { "id": "THIEF_GLOVES", "value": 4.72 }
+      { "id": "THIEFS_GLOVES", "value": 4.72 }
     ]
   }, {
     "id": "IDAS",
@@ -113,7 +113,7 @@
       { "id": "SUNFIRE_CAP", "value": 10.46 },
       { "id": "PROTECTOR_VOW", "value": 9.43 },
       { "id": "ZZROT_PORTAL", "value": 6.24 },
-      { "id": "THIEF_GLOVES", "value": 4.97 },
+      { "id": "THIEFS_GLOVES", "value": 4.97 },
       { "id": "STONEPLATE", "value": 4.95 }
     ]
   }, {
@@ -123,7 +123,7 @@
       { "id": "STONEPLATE", "value": 6.12 },
       { "id": "PROTECTOR_VOW", "value": 6.12 },
       { "id": "WARMOG_ARMOR", "value": 6.04 },
-      { "id": "THIEF_GLOVES", "value": 4.53 }
+      { "id": "THIEFS_GLOVES", "value": 4.53 }
     ]
   }, {
     "id": "KAISA",
@@ -159,13 +159,13 @@
       { "id": "PROTECTOR_VOW", "value": 7.61 },
       { "id": "ZZROT_PORTAL", "value": 7.18 },
       { "id": "STONEPLATE", "value": 5.88 },
-      { "id": "SHROUD_SILLNESS", "value": 5.04 }
+      { "id": "SHROUD_STILLNESS", "value": 5.04 }
     ]
   }, {
     "id": "LILLIA",
     "items": [
-      { "id": "THIEF_GLOVES", "value": 6.40 },
-      { "id": "SHROUD_SILLNESS", "value": 5.32 },
+      { "id": "THIEFS_GLOVES", "value": 6.40 },
+      { "id": "SHROUD_STILLNESS", "value": 5.32 },
       { "id": "ZEPHYR", "value": 4.94 },
       { "id": "IONIC_SPARK", "value": 4.66 },
       { "id": "ZEKE_HERALD", "value": 4.41 }
@@ -194,8 +194,8 @@
       { "id": "PROTECTOR_VOW", "value": 7.27 },
       { "id": "ZZROT_PORTAL", "value": 6.46 },
       { "id": "SUNFIRE_CAP", "value": 6.19 },
-      { "id": "SHROUD_SILLNESS", "value": 4.93 },
-      { "id": "THIEF_GLOVES", "value": 4.84 }
+      { "id": "SHROUD_STILLNESS", "value": 4.93 },
+      { "id": "THIEFS_GLOVES", "value": 4.84 }
     ]
   }, {
     "id": "NIDALEE",
@@ -255,9 +255,9 @@
     "id": "QIYANA",
     "items": [
       { "id": "ZEKE_HERALD", "value": 15.94 },
-      { "id": "SHROUD_SILLNESS", "value": 4.94 },
+      { "id": "SHROUD_STILLNESS", "value": 4.94 },
       { "id": "ZEPHYR", "value": 4.68 },
-      { "id": "THIEF_GLOVES", "value": 3.82 },
+      { "id": "THIEFS_GLOVES", "value": 3.82 },
       { "id": "PROTECTOR_VOW", "value": 3.60 }
     ]
   }, {
@@ -265,8 +265,8 @@
     "items": [
       { "id": "SUNFIRE_CAP", "value": 7.25 },
       { "id": "PROTECTOR_VOW", "value": 6.46 },
-      { "id": "THIEF_GLOVES", "value": 6.24 },
-      { "id": "SHROUD_SILLNESS", "value": 5.08 },
+      { "id": "THIEFS_GLOVES", "value": 6.24 },
+      { "id": "SHROUD_STILLNESS", "value": 5.08 },
       { "id": "ZZROT_PORTAL", "value": 4.67 }
     ]
   }, {
@@ -275,7 +275,7 @@
       { "id": "ZEKE_HERALD", "value": 36.50 },
       { "id": "PROTECTOR_VOW", "value": 13.08 },
       { "id": "SUNFIRE_CAP", "value": 5.31 },
-      { "id": "ZEKE_HERALD", "value": 3.90 },
+      { "id": "LOCKET_IRON_SOLARY", "value": 3.90 },
       { "id": "STONEPLATE", "value": 3.81 }
     ]
   }, {
@@ -293,7 +293,7 @@
       { "id": "ZEKE_HERALD", "value": 10.75 },
       { "id": "PROTECTOR_VOW", "value": 9.45 },
       { "id": "ZZROT_PORTAL", "value": 8.17 },
-      { "id": "SHROUD_SILLNESS", "value": 6.94 },
+      { "id": "SHROUD_STILLNESS", "value": 6.94 },
       { "id": "ZEPHYR", "value":6.45  }
     ]
   }, {
@@ -381,7 +381,7 @@
     "id": "SYFEN",
     "items": [
       { "id": "BLOODTHIRSTER", "value": 11.32 },
-      { "id": "THIEF_GLOVES", "value": 8.21 },
+      { "id": "THIEFS_GLOVES", "value": 8.21 },
       { "id": "TITAN_RESOLVE", "value": 7.74 },
       { "id": "HAND_OF_JUSTICE", "value": 5.42 },
       { "id": "INFINITY_EDGE", "value": 4.51 }
@@ -401,7 +401,7 @@
       { "id": "CHALICE_POWER", "value": 12.76 },
       { "id": "ZEPHYR", "value": 8.04 },
       { "id": "BANSHEE_CLAW", "value": 7.10 },
-      { "id": "SHROUD_SILLNESS", "value": 6.66 },
+      { "id": "SHROUD_STILLNESS", "value": 6.66 },
       { "id": "ZEKE_HERALD", "value": 6.55 }
     ]
   }, {
@@ -425,110 +425,110 @@
   }, {
     "id": "VARUS",
     "items": [
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  }
+      { "id": "GUINSOO_RAGEBLADE", "value": 16.83 },
+      { "id": "RUNAAN_HURRICANE", "value": 10.34 },
+      { "id": "STATIKK_SHIV", "value": 7.66 },
+      { "id": "GIANT_SLAYER", "value": 7.36 },
+      { "id": "DEATHBLADE", "value": 5.81 }
     ]
   }, {
     "id": "VLADIMIR",
     "items": [
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  }
+      { "id": "THIEFS_GLOVES", "value": 8.29 },
+      { "id": "ZZROT_PORTAL", "value": 7.33 },
+      { "id": "SUNFIRE_CAP", "value": 5.61 },
+      { "id": "STONEPLATE", "value": 5.37 },
+      { "id": "IONIC_SPARK", "value": 5.05 }
     ]
   }, {
     "id": "VOLIBEAR",
     "items": [
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  }
+      { "id": "SUNFIRE_CAP", "value": 6.07 },
+      { "id": "GUINSOO_RAGEBLADE", "value": 5.41 },
+      { "id": "CHALICE_POWER", "value": 5.41 },
+      { "id": "PROTECTOR_VOW", "value": 4.84 },
+      { "id": "TITAN_RESOLVE", "value": 4.03 }
     ]
   }, {
     "id": "WU_KONG",
     "items": [
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  }
+      { "id": "RAPID_FIRECANNON", "value": 9.31 },
+      { "id": "DEATHBLADE", "value": 8.66 },
+      { "id": "RUNAAN_HURRICANE", "value": 7.99 },
+      { "id": "BLOODTHIRSTER", "value": 7.00 },
+      { "id": "GUINSOO_RAGEBLADE", "value": 5.95 }
     ]
   }, {
     "id": "XAYAH",
     "items": [
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  }
+      { "id": "GUINSOO_RAGEBLADE", "value": 29.52 },
+      { "id": "GIANT_SLAYER", "value": 18.04 },
+      { "id": "INFINITY_EDGE", "value": 12.47 },
+      { "id": "LAST_WHISPER", "value": 9.47 },
+      { "id": "RUNAAN_HURRICANE", "value": 5.19 }
     ]
   }, {
     "id": "YASUO",
     "items": [
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  }
+      { "id": "BLOODTHIRSTER", "value": 7.83 },
+      { "id": "TITAN_RESOLVE", "value": 6.75 },
+      { "id": "BLUE_BUFF", "value": 6.72 },
+      { "id": "HAND_OF_JUSTICE", "value": 5.81 },
+      { "id": "INFINITY_EDGE", "value": 4.34 }
     ]
   }, {
     "id": "YONE",
     "items": [
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  }
+      { "id": "GUINSOO_RAGEBLADE", "value": 10.36 },
+      { "id": "ZEKE_HERALD", "value": 8.19 },
+      { "id": "BLOODTHIRSTER", "value": 5.76 },
+      { "id": "RAPID_FIRECANNON", "value": 4.97 },
+      { "id": "GIANT_SLAYER", "value": 4.37 }
     ]
   }, {
     "id": "ZAC",
     "items": [
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  }
+      { "id": "PROTECTOR_VOW", "value": 30.21 },
+      { "id": "ZZROT_PORTAL", "value": 10.62 },
+      { "id": "STONEPLATE", "value": 10.41 },
+      { "id": "SUNFIRE_CAP", "value": 6.05 },
+      { "id": "WARMOG_ARMOR", "value": 5.67 }
     ]
   }, {
     "id": "ZERI",
     "items": [
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  }
+      { "id": "ZEKE_HERALD", "value": 37.08 },
+      { "id": "BANSHEE_CLAW", "value": 4.66 },
+      { "id": "STATIKK_SHIV", "value": 4.51 },
+      { "id": "CHALICE_POWER", "value": 3.99 },
+      { "id": "THIEFS_GLOVES", "value": 3.21 }
     ]
   }, {
     "id": "ZIPPY",
     "items": [
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  }
+      { "id": "SUNFIRE_CAP", "value": 10.93 },
+      { "id": "BLOODTHIRSTER", "value": 7.25 },
+      { "id": "TITAN_RESOLVE", "value": 5.65 },
+      { "id": "STONEPLATE", "value": 5.65 },
+      { "id": "THIEFS_GLOVES", "value": 4.80 }
     ]
   }, {
     "id": "ZOE",
     "items": [
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  }
+      { "id": "SPEAR_OF_SHOJIN", "value": 10.24 },
+      { "id": "STATIKK_SHIV", "value": 7.03 },
+      { "id": "CHALICE_POWER", "value": 6.62 },
+      { "id": "GUINSOO_RAGEBLADE", "value": 4.51 },
+      { "id": "ARCHANGEL_STAFF", "value": 4.24 }
     ]
   }, {
     "id": "ZYRA",
     "items": [
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  },
-      { "id": , "value":  }
+      { "id": "GUINSOO_RAGEBLADE", "value": 18.87 },
+      { "id": "RUNAAN_HURRICANE", "value": 10.71 },
+      { "id": "SPEAR_OF_SHOJIN", "value": 4.31 },
+      { "id": "STATIKK_SHIV", "value": 4.20 },
+      { "id": "CHALICE_POWER", "value": 3.93 }
     ]
   }]
 }
