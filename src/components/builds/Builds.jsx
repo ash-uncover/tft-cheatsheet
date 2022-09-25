@@ -20,7 +20,11 @@ const Builds = () => {
   // Rendering
   let buildsFiltered = builds
   if (search) {
-    buildsFiltered = builds.filter(build => build.id.includes(search.toUpperCase()))
+    buildsFiltered = builds.filter(build => {
+      const bChampionMatch = build.id.includes(search.toUpperCase())
+      const bItemMatch = build.items.some(item => item.id.includes(search.toUpperCase()))
+      return bChampionMatch ||  bItemMatch
+    })
   }
   return (
     <div className='app-content builds'>
