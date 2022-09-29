@@ -1,0 +1,30 @@
+.hexagon {
+  aspect-ratio: 1.1733;
+  user-select: none;
+
+  .layer {
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    transition-property: top, bottom, left, right;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+    &.layer-border {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      height: calc(100% * 4 / 3);
+      box-sizing: border-box;
+      transition: background-color 0.5s ease-out;
+      background-color: black;
+      overflow: hidden;
+    }
+    &.layer-content {
+      position: absolute;
+      overflow: hidden;
+      top: 1px;
+      bottom: 1px;
+      left: 1px;
+      right: 1px;
+      background-color: grey;
+    }
+  }
+}

@@ -1,13 +1,34 @@
 .classe {
   width: var(--classe-size);
-  aspect-ratio: 1;
-  border-radius: calc(var(--classe-size) / 10);
-  overflow: hidden;
-  cursor: pointer;
 
-  .champion-image {
-    border-radius: calc(var(--classe-size) / 10 - 1);
-    height: 100%;
-    width: 100%;
+  overflow: hidden;
+
+
+  &.bronze .layer-content {
+    background: linear-gradient(#C37441, #EB8C53, #9A4B00 90%);
+  }
+  &.silver .layer-content {
+    background: linear-gradient(#95AEB3, #BDD8DB, #7D979A 90%);
+  }
+  &.gold .layer-content {
+    background: linear-gradient(#CAB769, #FDE37C, #A07815 90%);
+  }
+  &.platinium .layer-content {
+    background:
+      linear-gradient(217deg, rgba(255,255,255,.8), rgba(255,0,0,0) 70.71%),
+      linear-gradient(127deg, rgba(255,20,236,.8), rgba(0,255,0,0) 70.71%),
+      linear-gradient(336deg, rgba(245,255,73,.8), rgba(0,0,255,0) 70.71%);
+  }
+  .hexagon {
+    .layer-content {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .classe-image {
+      aspect-ratio: 1;
+      width: 60%;
+    }
   }
 }

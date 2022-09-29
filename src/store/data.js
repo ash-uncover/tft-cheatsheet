@@ -64,7 +64,9 @@ dataSlice.selectors = {
   origins: (state) => dataSlice.selectors.root(state).origins,
 
   champion: (id) => (state) => dataSlice.selectors.champions(state).find(champion => champion.id === id),
+  classe: (id) => (state) => dataSlice.selectors.classes(state).find(classe => classe.id === id),
   item: (id) => (state) => dataSlice.selectors.items(state).find(item => item.id === id),
+  origin: (id) => (state) => dataSlice.selectors.origins(state).find(origin => origin.id === id),
 }
 
 export const {

@@ -1,22 +1,47 @@
 .builder {
-  .builder-selector {
-    .classe {
-      --classe-size: 48px;
-      display: inline-flex;
-      margin: 5px;
+
+  .builder-section {
+    background: #333;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .builder-section+.builder-section {
+    margin-top: 1rem;
+  }
+
+  .builder-compo {
+    .builder-compo-bonus {
+      --classe-size: 24px;
+      --origin-size: 24px;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      font-size: 14px;
     }
-    .champion {
+    .builder-compo-champion {
       --champion-size: 48px;
-      display: inline-flex;
-      margin: 5px;
     }
-    .origin {
-      --origin-size: 48px;
-      display: inline-flex;
-      margin: 5px;
+    .builder-compo-button {
+      width: 52px;
+      height: 52px;
+      margin-left: auto;
+      cursor: pointer;
     }
   }
 
-  .builder-area {
+  .builder-selector {
+    .builder-selector-champion {
+      --champion-size: 32px;
+      filter: grayscale(1);
+      &:hover:not(.selected) {
+        filter: grayscale(0);
+      }
+      &.selected {
+        filter: sepia(1);
+      }
+    }
   }
 }

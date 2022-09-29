@@ -1,29 +1,98 @@
 {
   "origins": [{
-    "id": "ASTRAL"
+    "id": "ASTRAL",
+    "bonus": {
+      "bronze": 3,
+      "gold": 5,
+      "platinium": 8
+    }
   } ,{
-    "id": "DARKFLIGHT"
+    "id": "DARKFLIGHT",
+    "bonus": {
+      "bronze": 2,
+      "silver": 4,
+      "gold": 6,
+      "platinium": 8
+    }
   } ,{
-    "id": "GUILD"
+    "id": "GUILD",
+    "bonus": {
+      "bronze": 1,
+      "silver": 3,
+      "gold": 7,
+      "platinium": 8
+    }
   } ,{
-    "id": "JADE"
+    "id": "JADE",
+    "bonus": {
+      "bronze": 3,
+      "silver": 5,
+      "gold": 7,
+      "platinium": 9
+    }
   } ,{
-    "id": "LAGOON"
+    "id": "LAGOON",
+    "bonus": {
+      "bronze": 3,
+      "silver": 6,
+      "gold": 9,
+      "platinium": 12
+    }
   } ,{
-    "id": "MIRAGE"
+    "id": "MIRAGE",
+    "bonus": {
+      "bronze": 2,
+      "silver": 4,
+      "gold": 6,
+      "platinium": 8
+    }
   } ,{
-    "id": "MONOLITH"
+    "id": "MONOLITH",
+    "bonus": {
+      "gold": 3
+    }
   } ,{
-    "id": "PRODIGY"
+    "id": "PRODIGY",
+    "bonus": {
+      "gold": 3
+    }
   } ,{
-    "id": "RAGEWING"
+    "id": "RAGEWING",
+    "bonus": {
+      "bronze": 2,
+      "silver": 4,
+      "gold": 6,
+      "platinium": 8
+    }
   } ,{
-    "id": "SCALESCORN"
+    "id": "SCALESCORN",
+    "bonus": {
+      "bronze": 2,
+      "gold": 4,
+      "platinium": 6
+    }
   } ,{
-    "id": "SHIMMERSCALE"
+    "id": "SHIMMERSCALE",
+    "bonus": {
+      "bronze": 3,
+      "silver": 5,
+      "gold": 7,
+      "platinium": 9
+    }
   } ,{
-    "id": "TEMPEST"
+    "id": "TEMPEST",
+    "bonus": {
+      "bronze": 2,
+      "silver": 4,
+      "gold": 6,
+      "platinium": 8
+    }
   } ,{
-    "id": "WHISPER"
+    "id": "WHISPER",
+    "bonus": {
+      "bronze": 2,
+      "silver": 4,
+      "gold": 6
+    }
   }]
 }
