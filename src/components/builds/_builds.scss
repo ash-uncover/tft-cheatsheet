@@ -1,84 +1,72 @@
 .builds {
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
+  padding: 2rem;
 
-  .builds-container {
-    width: 800px;
-    max-width: 100%;
-    background-color: #222;
-    padding: 2rem;
-    border-radius: 1rem;
-    margin: 2rem 0;
+  .builds-header {
+    display: flex;
+    gap: 0.5rem;
+    .builds-search {
+      height: 2rem;
+      border-radius: 0.25rem;
+      border: none;
+      flex-grow: 1;
+    }
+    .builds-save {
+      height: 2rem;
+      width: 2rem;
+      border-radius: 0.25rem;
+      border: none;
+    }
+  }
 
-    .builds-header {
+  .build {
+    margin-top: 1rem;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    display: flex;
+    gap: 0.5rem;
+
+    .build-infos {
+      width: 0;
+      flex-grow: 2;
+    }
+
+    .build-item {
+      width: 0;
+      flex-grow: 3;
+      margin-left: 1rem;
       display: flex;
-      gap: 0.5rem;
-      .builds-search {
-        height: 2rem;
-        border-radius: 0.25rem;
-        border: none;
-        flex-grow: 1;
+      flex-direction: column;
+      align-items: center;
+      font-size: 13px;
+      .build-item-name {
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
       }
-      .builds-save {
-        height: 2rem;
-        width: 2rem;
-        border-radius: 0.25rem;
-        border: none;
+      .build-item-info {
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          border-radius: 5px;
+          width: 1.2rem;
+          height: 1.2rem;
+          margin-right: 0.5rem;
+        }
+        span {
+
+        }
       }
     }
 
-    .build {
-      margin-top: 1rem;
-      background-color: #333;
-      padding: 1rem;
-      border-radius: 0.5rem;
-
-      display: flex;
-      gap: 0.5rem;
-
-      .build-infos {
-        width: 0;
-        flex-grow: 2;
-      }
-
-      .build-item {
-        width: 0;
-        flex-grow: 3;
-        margin-left: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 13px;
-        .build-item-name {
-          text-align: center;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          width: 100%;
-        }
-        .build-item-info {
-          height: 24px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          img {
-            border-radius: 5px;
-            width: 1.2rem;
-            height: 1.2rem;
-            margin-right: 0.5rem;
-          }
-          span {
-
-          }
-        }
-      }
-
-      .build-items-add {
-        margin-left: auto;
-      }
+    .build-items-add {
+      margin-left: auto;
     }
   }
 }

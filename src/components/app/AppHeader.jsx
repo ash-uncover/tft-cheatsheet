@@ -8,7 +8,7 @@ import {
   Link,
 } from 'react-router-dom'
 
-import './_app.scss'
+import './_app-header.scss'
 
 const AppHeader = () => {
   // Hooks

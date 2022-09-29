@@ -14,6 +14,7 @@ import {
   selectors as DataSelectors,
 } from 'store/data'
 
+import AppPage from 'components/app/AppPage'
 import Champion from 'components/common/Champion'
 
 import './_champions.scss'
@@ -25,35 +26,33 @@ const Champions = () => {
   const origins = useSelector(DataSelectors.origins)
 
   return (
-    <div className='app-content champions'>
-      <div className='champions-content'>
-        <div className='champions-section trait-tiles'>
-          {origins.map(origin => (
-            <OriginTile
-              key={origin.id}
-              origin={origin}
-            />
-          ))}
-        </div>
-        <div className='champions-section trait-tiles'>
-          {classes.map(classe => (
-            <ClasseTile
-              key={classe.id}
-              classe={classe}
-            />
-          ))}
-        </div>
-        <div className='champions-section champion-tiles'>
-          {champions.map((champion, index) => (
-            <ChampionTile
-              key={champion.id}
-              champion={champion}
-              index={index}
-            />
-          ))}
-        </div>
+    <AppPage className='champions'>
+      <div className='champions-section trait-tiles'>
+        {origins.map(origin => (
+          <OriginTile
+            key={origin.id}
+            origin={origin}
+          />
+        ))}
       </div>
-    </div>
+      <div className='champions-section trait-tiles'>
+        {classes.map(classe => (
+          <ClasseTile
+            key={classe.id}
+            classe={classe}
+          />
+        ))}
+      </div>
+      <div className='champions-section champion-tiles'>
+        {champions.map((champion, index) => (
+          <ChampionTile
+            key={champion.id}
+            champion={champion}
+            index={index}
+          />
+        ))}
+      </div>
+    </AppPage>
   )
 }
 

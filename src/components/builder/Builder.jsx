@@ -8,6 +8,7 @@ import {
   selectors as DataSelectors,
 } from 'store/data'
 
+import AppPage from 'components/app/AppPage'
 import Classe from 'components/common/Classe'
 import Champion from 'components/common/Champion'
 import Origin from 'components/common/Origin'
@@ -22,22 +23,20 @@ const Builder = () => {
 
   // Rendering
   return (
-    <div className='app-content builder'>
-      <div className='builder-container'>
-        <div className='builder-selector'>
-          {champions.map(champion => <Champion key={champion.id} {...champion} />)}
-        </div>
-        <div className='builder-selector'>
-          {classes.map(classe => <Classe key={classe.id} {...classe} />)}
-        </div>
-        <div className='builder-selector'>
-          {origins.map(origin => <Origin key={origin.id} {...origin} />)}
-        </div>
-        <div className='builder-area'>
-
-        </div>
+    <AppPage className='builder'>
+      <div className='builder-selector'>
+        {champions.map(champion => <Champion key={champion.id} {...champion} />)}
       </div>
-    </div>
+      <div className='builder-selector'>
+        {classes.map(classe => <Classe key={classe.id} {...classe} />)}
+      </div>
+      <div className='builder-selector'>
+        {origins.map(origin => <Origin key={origin.id} {...origin} />)}
+      </div>
+      <div className='builder-area'>
+
+      </div>
+    </AppPage>
   )
 }
 

@@ -16,12 +16,6 @@ html, body, #react-root {
 #react-root {
   display: flex;
   flex-direction: column;
-  .app-content {
-    color: white;
-    background: #111;
-    margin-top: 3rem;
-    flex-grow: 1;
-  }
   .app-footer {
     flex-shrink: 0;
     height: 2rem;

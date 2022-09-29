@@ -1,0 +1,18 @@
+.app-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  background: #111;
+  margin-top: 3rem;
+  flex-grow: 1;
+
+  .app-page-content {
+    width: 900px;
+    max-width: 100%;
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+}

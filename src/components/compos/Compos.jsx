@@ -10,6 +10,7 @@ import {
   selectors as DataSelectors,
 } from 'store/data'
 
+import AppPage from 'components/app/AppPage'
 import Champion from 'components/common/Champion'
 
 import './_compos.scss'
@@ -20,11 +21,9 @@ const Compos = () => {
 
   // Rendering
   return (
-    <div className='app-content compos'>
-      <div className='compos-container'>
-        {compos.map(compo => <Compo key={compo.name} compo={compo} />)}
-      </div>
-    </div>
+    <AppPage className='compos'>
+      {compos.map(compo => <Compo key={compo.name} compo={compo} />)}
+    </AppPage>
   )
 }
 

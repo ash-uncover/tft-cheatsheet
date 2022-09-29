@@ -5,8 +5,6 @@ import {
   useSelector,
 } from 'lib/hooks'
 
-import './_items.scss'
-
 import {
   actions as AppActions,
   selectors as AppSelectors,
@@ -15,6 +13,10 @@ import {
 import {
   selectors as DataSelectors,
 } from 'store/data'
+
+import AppPage from 'components/app/AppPage'
+
+import './_items.scss'
 
 const Items = () => {
 
@@ -36,9 +38,9 @@ const Items = () => {
     itemsMatrix.push(itemsRow)
   })
   return (
-    <div className='app-content items'>
+    <AppPage className='items'>
       <ItemsTable itemRows={itemsMatrix} />
-    </div>
+    </AppPage>
   )
 }
 

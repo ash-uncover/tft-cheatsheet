@@ -1,25 +1,22 @@
 .builder {
-
-  .builder-container {
-    .builder-selector {
-      .classe {
-        --classe-size: 48px;
-        display: inline-flex;
-        margin: 5px;
-      }
-      .champion {
-        --champion-size: 48px;
-        display: inline-flex;
-        margin: 5px;
-      }
-      .origin {
-        --origin-size: 48px;
-        display: inline-flex;
-        margin: 5px;
-      }
+  .builder-selector {
+    .classe {
+      --classe-size: 48px;
+      display: inline-flex;
+      margin: 5px;
     }
-
-    .builder-area {
+    .champion {
+      --champion-size: 48px;
+      display: inline-flex;
+      margin: 5px;
     }
+    .origin {
+      --origin-size: 48px;
+      display: inline-flex;
+      margin: 5px;
+    }
+  }
+
+  .builder-area {
   }
 }

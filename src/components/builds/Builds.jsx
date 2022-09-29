@@ -10,6 +10,8 @@ import {
   selectors as DataSelectors,
 } from 'store/data'
 
+import AppPage from 'components/app/AppPage'
+
 import './_builds.scss'
 
 const Builds = () => {
@@ -27,22 +29,20 @@ const Builds = () => {
     })
   }
   return (
-    <div className='app-content builds'>
-      <div className='builds-container'>
-        <div className='builds-header'>
-          <input
-            className='builds-search'
-            value={search}
-            placeholder='Search...'
-            onChange={(e) => setSearch(e.target.value)}
-          />
-          <button className='builds-save'>
-            +
-          </button>
-        </div>
-        {buildsFiltered.map(build => <Build key={build.id} build={build} />)}
+    <AppPage className='builds'>
+      <div className='builds-header'>
+        <input
+          className='builds-search'
+          value={search}
+          placeholder='Search...'
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <button className='builds-save'>
+          +
+        </button>
       </div>
-    </div>
+      {buildsFiltered.map(build => <Build key={build.id} build={build} />)}
+    </AppPage>
   )
 }
 

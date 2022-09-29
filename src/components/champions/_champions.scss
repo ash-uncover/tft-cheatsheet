@@ -1,118 +1,111 @@
 .champions {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   --trait-gap: 12px;
+  .app-page-content {
+    width: 700px;
+  }
 
-  .champions-content {
-    max-width: 700px;
-    background-color: #222;
-    padding: 2rem;
-    border-radius: 1rem;
+  .champions-section+.champions-section {
+    margin-top: 1rem;
+  }
 
-    .champions-section+.champions-section {
-      margin-top: 1rem;
+  .trait-tiles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--trait-gap);
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    >.trait-tile {
+      cursor: pointer;
+      width: 4%;
+      aspect-ratio: 1;
+      >.trait-tile-content {
+        >img {
+          height: 100%;
+          width: 100%;
+        }
+      }
     }
+  }
 
+  .champion-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .champion-tile {
+      cursor: pointer;
+      padding: 3px;
+      width: 10%;
+      --champion-size: 100%;
+      .champion {
+        border-radius: 5px;
+        .champion-image {
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+
+  &:hover {
     .trait-tiles {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: var(--trait-gap);
-      width: 100%;
-      padding: 0 1rem;
-      box-sizing: border-box;
-      >.trait-tile {
-        cursor: pointer;
-        width: 4%;
-        aspect-ratio: 1;
-        >.trait-tile-content {
-          >img {
-            height: 100%;
-            width: 100%;
-          }
+      .trait-tile.highlight {
+        border-radius: 50%;
+        transform: scale(1.5);
+        &.classe {
+          box-shadow: 0 0 5px 2px rgb(100 255 100 / 90%);
+          background: radial-gradient(closest-side, transparent, #64FF64);
+        }
+        &.origin {
+          box-shadow: 0 0 5px 2px rgb(100 100 255 / 90%);
+          background: radial-gradient(closest-side, transparent, #6464FF);
         }
       }
     }
-
     .champion-tiles {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-
-      .champion-tile {
-        cursor: pointer;
-        padding: 3px;
-        width: 10%;
-        --champion-size: 100%;
-        .champion {
-          border-radius: 5px;
-          .champion-image {
-            border-radius: 4px;
-          }
-        }
-      }
-    }
-
-    &:hover {
-      .trait-tiles {
-        .trait-tile.highlight {
-          border-radius: 50%;
-          transform: scale(1.5);
-          &.classe {
+      .champion-tile.highlight {
+        &.partial-classe {
+          opacity: 0.3;
+          .champion {
             box-shadow: 0 0 5px 2px rgb(100 255 100 / 90%);
-            background: radial-gradient(closest-side, transparent, #64FF64);
           }
-          &.origin {
+        }
+        &.partial-origin {
+          opacity: 0.3;
+          .champion {
             box-shadow: 0 0 5px 2px rgb(100 100 255 / 90%);
-            background: radial-gradient(closest-side, transparent, #6464FF);
+          }
+        }
+        &.partial-classe.partial-origin {
+          opacity: 0.3;
+          .champion {
+            box-shadow: 0 0 5px 2px rgb(255 215 0 / 85%);
+          }
+        }
+        &.full-classe {
+          opacity: 0.8;
+          .champion {
+            box-shadow: 0 0 5px 2px rgb(100 255 100 / 90%);
+          }
+        }
+        &.full-origin {
+          opacity: 0.8;
+          .champion {
+            box-shadow: 0 0 5px 2px rgb(100 100 255 / 90%);
+          }
+        }
+        &.full {
+          opacity: 1;
+          .champion {
+            box-shadow: 0 0 5px 2px rgb(255 215 0 / 85%);
           }
         }
       }
-      .champion-tiles {
-        .champion-tile.highlight {
-          &.partial-classe {
-            opacity: 0.3;
-            .champion {
-              box-shadow: 0 0 5px 2px rgb(100 255 100 / 90%);
-            }
-          }
-          &.partial-origin {
-            opacity: 0.3;
-            .champion {
-              box-shadow: 0 0 5px 2px rgb(100 100 255 / 90%);
-            }
-          }
-          &.partial-classe.partial-origin {
-            opacity: 0.3;
-            .champion {
-              box-shadow: 0 0 5px 2px rgb(255 215 0 / 85%);
-            }
-          }
-          &.full-classe {
-            opacity: 0.8;
-            .champion {
-              box-shadow: 0 0 5px 2px rgb(100 255 100 / 90%);
-            }
-          }
-          &.full-origin {
-            opacity: 0.8;
-            .champion {
-              box-shadow: 0 0 5px 2px rgb(100 100 255 / 90%);
-            }
-          }
-          &.full {
-            opacity: 1;
-            .champion {
-              box-shadow: 0 0 5px 2px rgb(255 215 0 / 85%);
-            }
-          }
-        }
-        .champion-tile:not(.highlight) {
-          opacity: 0.2;
-          filter: grayscale(1);
-        }
+      .champion-tile:not(.highlight) {
+        opacity: 0.2;
+        filter: grayscale(1);
       }
     }
   }
