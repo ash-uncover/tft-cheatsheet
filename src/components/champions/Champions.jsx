@@ -5,8 +5,6 @@ import {
   useSelector,
 } from 'lib/hooks'
 
-import './_champions.scss'
-
 import {
   actions as AppActions,
   selectors as AppSelectors,
@@ -15,6 +13,10 @@ import {
 import {
   selectors as DataSelectors,
 } from 'store/data'
+
+import Champion from 'components/common/Champion'
+
+import './_champions.scss'
 
 const Champions = () => {
 
@@ -173,9 +175,10 @@ const ChampionTile = ({ champion }) => {
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <div className='champion-tile-content'>
-        <img src={`images/champions/${champion.id}.jpg`} />
-      </div>
+      <Champion
+        id={champion.id}
+        name={champion.name}
+      />
     </div>
   )
 }

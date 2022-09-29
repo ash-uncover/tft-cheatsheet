@@ -45,14 +45,11 @@
         cursor: pointer;
         padding: 3px;
         width: 10%;
-        aspect-ratio: 1;
-        >.champion-tile-content {
+        --champion-size: 100%;
+        .champion {
           border-radius: 5px;
-          overflow: hidden;
-          >img {
+          .champion-image {
             border-radius: 4px;
-            height: 100%;
-            width: 100%;
           }
         }
       }
@@ -77,37 +74,37 @@
         .champion-tile.highlight {
           &.partial-classe {
             opacity: 0.3;
-            .champion-tile-content {
+            .champion {
               box-shadow: 0 0 5px 2px rgb(100 255 100 / 90%);
             }
           }
           &.partial-origin {
             opacity: 0.3;
-            .champion-tile-content {
+            .champion {
               box-shadow: 0 0 5px 2px rgb(100 100 255 / 90%);
             }
           }
           &.partial-classe.partial-origin {
             opacity: 0.3;
-            .champion-tile-content {
+            .champion {
               box-shadow: 0 0 5px 2px rgb(255 215 0 / 85%);
             }
           }
           &.full-classe {
             opacity: 0.8;
-            .champion-tile-content {
+            .champion {
               box-shadow: 0 0 5px 2px rgb(100 255 100 / 90%);
             }
           }
           &.full-origin {
             opacity: 0.8;
-            .champion-tile-content {
+            .champion {
               box-shadow: 0 0 5px 2px rgb(100 100 255 / 90%);
             }
           }
           &.full {
             opacity: 1;
-            .champion-tile-content {
+            .champion {
               box-shadow: 0 0 5px 2px rgb(255 215 0 / 85%);
             }
           }

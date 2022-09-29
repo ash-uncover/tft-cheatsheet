@@ -1,0 +1,15 @@
+.builder {
+
+  .builder-container {
+    .builder-selector {
+      --champion-size: 48px;
+      .champion {
+        display: inline-flex;
+        margin: 5px;
+      }
+    }
+
+    .builder-area {
+    }
+  }
+}

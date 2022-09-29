@@ -10,6 +10,8 @@ import {
   selectors as DataSelectors,
 } from 'store/data'
 
+import Champion from 'components/common/Champion'
+
 import './_compos.scss'
 
 const Compos = () => {
@@ -19,7 +21,9 @@ const Compos = () => {
   // Rendering
   return (
     <div className='app-content compos'>
-      {compos.map(compo => <Compo key={compo.name} compo={compo} />)}
+      <div className='compos-container'>
+        {compos.map(compo => <Compo key={compo.name} compo={compo} />)}
+      </div>
     </div>
   )
 }
@@ -32,25 +36,10 @@ const Compo = ({ compo }) => {
     <div className='compo'>
       {compo.name}
       <div className='compo-champions'>
-        {compo.champions.map(id => <CompoChampion key={id} id={id} />)}
+        {compo.champions.map(id => <Champion key={id} id={id} />)}
       </div>
     </div>
   )
 }
-
-const CompoChampion = ({ id }) => {
-  // Hooks
-  const champion = useSelector(DataSelectors.dataChampionSelector(id))
-
-  // Rendering
-  return (
-    <div className='compo-champion'>
-      <div className='compo-champion-image'>
-        <img src={`images/champions/${champion.id}.jpg`} />
-      </div>
-    </div>
-  )
-}
-
 
 export default Compos
