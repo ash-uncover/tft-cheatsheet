@@ -16,7 +16,7 @@ import DataStates from 'lib/constants/DataStates'
 
 const RouteRoot = () => {
 
-  const status = useSelector(DataSelectors.dataStatusSelector)
+  const status = useSelector(DataSelectors.status)
 
   switch (status) {
     case DataStates.NEVER:

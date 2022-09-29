@@ -14,7 +14,7 @@ import './_builds.scss'
 
 const Builds = () => {
   // Hooks
-  const builds = useSelector(DataSelectors.dataBuildsSelector)
+  const builds = useSelector(DataSelectors.builds)
   const [search, setSearch] = useState('')
 
   // Rendering
@@ -48,7 +48,7 @@ const Builds = () => {
 
 const Build = ({ build }) => {
   // Hooks
-  const champion = useSelector(DataSelectors.dataChampionSelector(build.id))
+  const champion = useSelector(DataSelectors.champion(build.id))
 
   // Rendering
   return (
@@ -74,7 +74,7 @@ const Build = ({ build }) => {
 
 const BuildItem = ({ id, value }) => {
   // Hooks
-  const item = useSelector(DataSelectors.dataItemSelector(id))
+  const item = useSelector(DataSelectors.item(id))
 
   // Rendering
   return (

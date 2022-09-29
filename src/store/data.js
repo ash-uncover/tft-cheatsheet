@@ -51,20 +51,20 @@ const dataSlice = createSlice({
 })
 
 dataSlice.selectors = {
-  dataSelector: (state) => state.data,
+  root: (state) => state.data,
 
-  dataStatusSelector: (state) => dataSlice.selectors.dataSelector(state).status,
-  dataErrorSelector: (state) => dataSlice.selectors.dataSelector(state).error,
+  status: (state) => dataSlice.selectors.root(state).status,
+  error: (state) => dataSlice.selectors.root(state).error,
 
-  dataBuildsSelector: (state) => dataSlice.selectors.dataSelector(state).builds,
-  dataChampionsSelector: (state) => dataSlice.selectors.dataSelector(state).champions,
-  dataClassesSelector: (state) => dataSlice.selectors.dataSelector(state).classes,
-  dataComposSelector: (state) => dataSlice.selectors.dataSelector(state).compos,
-  dataItemsSelector: (state) => dataSlice.selectors.dataSelector(state).items,
-  dataOriginsSelector: (state) => dataSlice.selectors.dataSelector(state).origins,
+  builds: (state) => dataSlice.selectors.root(state).builds,
+  champions: (state) => dataSlice.selectors.root(state).champions,
+  classes: (state) => dataSlice.selectors.root(state).classes,
+  compos: (state) => dataSlice.selectors.root(state).compos,
+  items: (state) => dataSlice.selectors.root(state).items,
+  origins: (state) => dataSlice.selectors.root(state).origins,
 
-  dataChampionSelector: (id) => (state) => dataSlice.selectors.dataSelector(state).champions.find(champion => champion.id === id),
-  dataItemSelector: (id) => (state) => dataSlice.selectors.dataSelector(state).items.find(item => item.id === id),
+  champion: (id) => (state) => dataSlice.selectors.champions(state).find(champion => champion.id === id),
+  item: (id) => (state) => dataSlice.selectors.items(state).find(item => item.id === id),
 }
 
 export const {

@@ -34,7 +34,7 @@ const Root = () => {
 
   const dispatch = useDispatch()
 
-  const dataLoadStatus = useSelector(DataSelectors.dataStatusSelector)
+  const dataLoadStatus = useSelector(DataSelectors.status)
 
   useEffect(() => {
     ServiceHelper.loadData(dispatch)

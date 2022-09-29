@@ -2,8 +2,18 @@
 
   .builder-container {
     .builder-selector {
-      --champion-size: 48px;
+      .classe {
+        --classe-size: 48px;
+        display: inline-flex;
+        margin: 5px;
+      }
       .champion {
+        --champion-size: 48px;
+        display: inline-flex;
+        margin: 5px;
+      }
+      .origin {
+        --origin-size: 48px;
         display: inline-flex;
         margin: 5px;
       }

@@ -20,9 +20,9 @@ import './_champions.scss'
 
 const Champions = () => {
 
-  const champions = useSelector(DataSelectors.dataChampionsSelector)
-  const classes = useSelector(DataSelectors.dataClassesSelector)
-  const origins = useSelector(DataSelectors.dataOriginsSelector)
+  const champions = useSelector(DataSelectors.champions)
+  const classes = useSelector(DataSelectors.classes)
+  const origins = useSelector(DataSelectors.origins)
 
   return (
     <div className='app-content champions'>

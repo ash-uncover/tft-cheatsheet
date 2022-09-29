@@ -1,0 +1,13 @@
+.item {
+  width: var(--item-size);
+  aspect-ratio: 1;
+  border-radius: calc(var(--item-size) / 10);
+  overflow: hidden;
+  cursor: pointer;
+
+  .champion-image {
+    border-radius: calc(var(--item-size) / 10 - 1);
+    height: 100%;
+    width: 100%;
+  }
+}

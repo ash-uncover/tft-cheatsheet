@@ -18,7 +18,7 @@ import {
 
 const Items = () => {
 
-  const items = useSelector(DataSelectors.dataItemsSelector)
+  const items = useSelector(DataSelectors.items)
   const itemsBase = items.filter(item => !item.isComplex)
 
   const itemsMatrix = [[null, ...itemsBase]]

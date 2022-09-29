@@ -16,7 +16,7 @@ import './_compos.scss'
 
 const Compos = () => {
   // Hooks
-  const compos = useSelector(DataSelectors.dataComposSelector)
+  const compos = useSelector(DataSelectors.compos)
 
   // Rendering
   return (
