@@ -4,8 +4,8 @@ import {
 
 import DataService from 'services/DataService'
 
-export const loadData = async (dispatch) => {
-  dispatch(DataActions.dataLoadRequest())
+export const loadData = async (dispatch, refresh = false) => {
+  dispatch(DataActions.loadRequest())
   Promise.all([
     DataService.api.v1.data.builds.get(),
     DataService.api.v1.data.champions.get(),
@@ -15,10 +15,10 @@ export const loadData = async (dispatch) => {
     DataService.api.v1.data.origins.get(),
   ])
     .then(([{builds}, {champions}, {classes}, {compos}, {items}, {origins}]) => {
-      dispatch(DataActions.dataLoadSuccess({ builds, champions, classes, compos, items, origins }))
+      dispatch(DataActions.loadSuccess({ builds, champions, classes, compos, items, origins, refresh }))
 
     })
     .catch((error) => {
-      dispatch(DataActions.dataLoadFailure({ error }))
+      dispatch(DataActions.loadFailure({ error }))
     })
 }

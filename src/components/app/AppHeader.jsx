@@ -47,12 +47,6 @@ const AppHeader = () => {
       >
         compos
       </Link>
-      <Link
-        to='/builder'
-        className={location.pathname.startsWith('/builder') ? 'selected' : null}
-      >
-        builder
-      </Link>
     </div>
   )
 }

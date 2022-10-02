@@ -114,3 +114,12 @@ export const sortBonuses = (bonus1, bonus2) => {
   }
   return bonus1.id.localeCompare(bonus2.id)
 }
+
+export default {
+  getCompoBonuses,
+  getCompoClasses,
+  getCompoClassesBonus,
+  getCompoOrigins,
+  getCompoOriginsBonus,
+  sortBonuses,
+}

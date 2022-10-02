@@ -19,14 +19,12 @@ import {
 import DataStates from 'lib/constants/DataStates'
 
 import AppHeader from 'components/app/AppHeader'
-import HomeError from 'components/home/HomeError'
-import HomeLoading from 'components/home/HomeLoading'
+
 import RouteHome from 'routes'
 import RouteItems from 'routes/items'
 import RouteChampions from 'routes/champions'
 import RouteBuilds from 'routes/builds'
 import RouteCompos from 'routes/compos'
-import RouteBuilder from 'routes/builder'
 
 import * as ServiceHelper from 'services/ServiceHelper'
 
@@ -34,17 +32,17 @@ const Root = () => {
 
   const dispatch = useDispatch()
 
-  const dataLoadStatus = useSelector(DataSelectors.status)
+  const status = useSelector(DataSelectors.status)
 
   useEffect(() => {
     ServiceHelper.loadData(dispatch)
   }, [])
 
-  switch (dataLoadStatus) {
+  switch (status) {
     case DataStates.NEVER:
     case DataStates.FETCHING_FIRST:
     case DataStates.FETCHING: {
-      return <HomeLoading />
+      return <RouteHome />
     }
     case DataStates.SUCCESS: {
       return (
@@ -57,7 +55,6 @@ const Root = () => {
               <Route path='/champions' element={<RouteChampions />} />
               <Route path='/builds' element={<RouteBuilds />} />
               <Route path='/compos' element={<RouteCompos />} />
-              <Route path='/builder' element={<RouteBuilder />} />
             </Routes>
             <div className='app-footer'>
               footer
@@ -67,7 +64,7 @@ const Root = () => {
       )
     }
     default: {
-      return <HomeError />
+      return <RouteHome />
     }
   }
 }

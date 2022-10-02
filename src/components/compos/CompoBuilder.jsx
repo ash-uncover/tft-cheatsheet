@@ -1,28 +1,23 @@
 import React from 'react'
 
 import {
-  useDispatch,
   useSelector,
   useState,
 } from 'lib/hooks'
 
 import {
-  actions as DataActions,
   selectors as DataSelectors,
 } from 'store/data'
 
-import AppPage from 'components/app/AppPage'
 import Champion from 'components/common/Champion'
 import Classe from 'components/common/Classe'
 import Origin from 'components/common/Origin'
 
-import { getCompoBonuses } from 'lib/utils/BonusUtils'
+import BonusUtils from 'lib/utils/BonusUtils'
+import ChampionUtils from 'lib/utils/ChampionUtils'
 
-import './_builder.scss'
-
-const CompoBuilder = () => {
+const CompoBuilder = ({ onCreateCompo, onCancel }) => {
   // Hooks
-  const dispatch = useDispatch()
 
   const compos = useSelector(DataSelectors.compos)
   const champions = useSelector(DataSelectors.champions)
@@ -32,50 +27,56 @@ const CompoBuilder = () => {
   const [compoChampions, setCompoChampions] = useState([])
   const [compoName, setCompoName] = useState('')
 
-  const compoBonuses = getCompoBonuses(compoChampions, origins, classes)
-  const compoSize = compoChampions.reduce((acc, champion) => {
-    if (champion.classes.includes('DRAGON')) {
-      return acc + 2
-    }
-    return acc + 1
-  }, 0)
+  const compoBonuses = BonusUtils.getCompoBonuses(compoChampions, origins, classes)
+  const compoSize = ChampionUtils.getTeamSize(compoChampions)
 
-  const saveEnabled = compoName.trim() && compoChampions.length
+  const saveEnabled = compoName.trim() && compoSize
 
   // Events
+
   const onAddChampion = (champion) => {
     if (compoSize < 9 && !compoChampions.includes(champion)) {
-      const newChamps = [...compoChampions, champion].sort((champion1, champion2) => {
-        if(champion1.tier !== champion2.tier) {
-          return champion1.tier - champion2.tier
-        }
-        return champion1.name.localeCompare(champion2.name)
-      })
-      setCompoChampions(newChamps)
+      const newChampions = ChampionUtils.sortChampions([...compoChampions, champion])
+      setCompoChampions(newChampions)
     }
   }
+
   const onRemoveChampion = (champion) => {
-    setCompoChampions(compoChampions.filter(c => c !== champion))
+    const newChampions = compoChampions.filter(c => c !== champion)
+    setCompoChampions(newChampions)
   }
+
   const onAddCompo = () => {
-    dispatch(DataActions.createCompo({
-      compo: {
-        id: compoName,
-        champions: compoChampions.map(champion => champion.id)
-      }
-    }))
+    const champions = ChampionUtils.extractIds(compoChampions)
+    onCreateCompo({
+      id: compoName,
+      champions
+    })
   }
 
   // Rendering
-  return (
-    <AppPage className='builder'>
 
-      <div className='builder-section builder-compo'>
+  return (
+    <div className='compo-section-builder'>
+
+      <div className='compo-builder-section flex align-center'>
+        <h2>New Team Composition</h2>
         <input
+          className='margin-left-auto'
           placeholder='Enter name'
           value={compoName}
           onChange={(e) => setCompoName(e.target.value)}
         />
+        <button
+          className='compo-builder-compo-button cursor-pointer'
+          disabled={!saveEnabled}
+          onClick={onAddCompo}
+        >
+          <i className='fa-solid fa-floppy-disk'></i>
+        </button>
+      </div>
+
+      <div className='compo-builder-section compo-builder-compo'>
         {compoBonuses.map(bonus => (
           <BuilderCompoBonus
             key={bonus.id}
@@ -89,16 +90,10 @@ const CompoBuilder = () => {
             onClick={() => onRemoveChampion(champion)}
           />
         ))}
-        <button
-          className='builder-compo-button'
-          disabled={!saveEnabled}
-          onClick={onAddCompo}
-        >
-          save
-        </button>
+
       </div>
 
-      <div className='builder-section builder-selector'>
+      <div className='compo-builder-section compo-builder-selector'>
         {champions.map(champion => (
           <BuilderSelectorChampion
             key={champion.id}
@@ -109,7 +104,7 @@ const CompoBuilder = () => {
         ))}
       </div>
 
-    </AppPage>
+    </div>
   )
 }
 
@@ -123,7 +118,7 @@ const BuilderCompoBonus = ({ id, type, bonus, value }) => {
 
 const BuilderCompoClasseBonus = ({ id, type, bonus, value }) => {
   return (
-    <div className='builder-compo-bonus'>
+    <div className='compo-builder-compo-bonus'>
       <Classe
         id={id}
         bonus={bonus}
@@ -135,7 +130,7 @@ const BuilderCompoClasseBonus = ({ id, type, bonus, value }) => {
 
 const BuilderCompoOriginBonus = ({ id, type, bonus, value }) => {
   return (
-    <div className='builder-compo-bonus'>
+    <div className='compo-builder-compo-bonus'>
       <Origin
         id={id}
         bonus={bonus}
@@ -151,7 +146,7 @@ const BuilderCompoChampion = ({
 }) => {
   return (
     <div
-      className='builder-compo-champion'
+      className='compo-builder-compo-champion'
       onClick={onClick}
     >
       <Champion {...champion} />
@@ -165,7 +160,7 @@ const BuilderSelectorChampion = ({
   onClick,
 }) => {
   // Rendering
-  const classArray=['builder-selector-champion']
+  const classArray=['compo-builder-selector-champion']
   if (selected) {
     classArray.push('selected')
   }

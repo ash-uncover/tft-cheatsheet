@@ -1,13 +1,15 @@
 import React from 'react'
 
+import AppPage from 'components/app/AppPage'
+
 import './_home.scss'
 
 const Home = () => {
 
   return (
-    <div className='app-content home'>
+    <AppPage className='home'>
       HOME
-    </div>
+    </AppPage>
   )
 }
 

@@ -14,5 +14,14 @@
     background-color: #222;
     padding: 2rem;
     border-radius: 1rem;
+
+    .app-page-section {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      background-color: #333;
+    }
+    .app-page-section+.app-page-section {
+      margin-top: 1rem;
+    }
   }
 }

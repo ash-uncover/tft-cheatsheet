@@ -4,6 +4,7 @@ npm-debug.log
 
 # Ignore node modules
 node_modules
+public/lol-data
 
 # test coverage info
 test/__coverage__
