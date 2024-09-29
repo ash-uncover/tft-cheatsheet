@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './_champion.scss'
+import './_champion.css'
 
 const Champion = ({
   id,

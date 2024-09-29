@@ -2,7 +2,7 @@ import React from 'react'
 
 import Hexagon from 'components/common/Hexagon'
 
-import './_classe.scss'
+import './_classe.css'
 
 const Classe = ({
   id,

@@ -12,7 +12,7 @@ import {
 
 import AppPage from 'components/app/AppPage'
 
-import './_builds.scss'
+import './_builds.css'
 
 const Builds = () => {
   // Hooks

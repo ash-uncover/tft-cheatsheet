@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './_app-page.scss'
+import './_app-page.css'
 
 const AppPage = ({ className, children }) => {
   // Rendering

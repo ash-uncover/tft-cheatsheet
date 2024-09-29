@@ -2,7 +2,7 @@ import React from 'react'
 
 import AppPage from 'components/app/AppPage'
 
-import './_home.scss'
+import './_home.css'
 
 const Home = () => {
 

@@ -1,7 +1,8 @@
-.origin {
-  width: var(--origin-size);
+.classe {
+  width: var(--classe-size);
 
   overflow: hidden;
+
 
   &.bronze .layer-content {
     background: linear-gradient(#C37441, #EB8C53, #9A4B00 90%);
@@ -14,20 +15,18 @@
   }
   &.platinium .layer-content {
     background:
-      linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-      linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-      linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+      linear-gradient(217deg, rgba(255,255,255,.8), rgba(255,0,0,0) 70.71%),
+      linear-gradient(127deg, rgba(255,20,236,.8), rgba(0,255,0,0) 70.71%),
+      linear-gradient(336deg, rgba(245,255,73,.8), rgba(0,0,255,0) 70.71%);
   }
-
-
-  .hexagon {
-    .layer-content {
+  & .hexagon {
+    & .layer-content {
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .origin-image {
+    & .classe-image {
       aspect-ratio: 1;
       width: 60%;
     }

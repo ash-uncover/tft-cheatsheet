@@ -2,7 +2,7 @@ import React from 'react'
 
 import Hexagon from 'components/common/Hexagon'
 
-import './_origin.scss'
+import './_origin.css'
 
 const Origin = ({
   id,

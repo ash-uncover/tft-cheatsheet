@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './_item.scss'
+import './_item.css'
 
 const Item = ({
   id,

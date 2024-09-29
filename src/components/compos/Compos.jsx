@@ -19,7 +19,7 @@ import ComposListItem from './ComposListItem'
 
 import * as ServiceHelper from 'services/ServiceHelper'
 
-import './_compos.scss'
+import './_compos.css'
 
 const Compos = () => {
   // Hooks

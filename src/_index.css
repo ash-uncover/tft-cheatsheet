@@ -16,7 +16,7 @@ html, body, #react-root {
 #react-root {
   display: flex;
   flex-direction: column;
-  .app-footer {
+  & .app-footer {
     flex-shrink: 0;
     height: 2rem;
     background: red;

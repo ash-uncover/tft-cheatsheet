@@ -16,7 +16,7 @@ import {
 
 import AppPage from 'components/app/AppPage'
 
-import './_items.scss'
+import './_items.css'
 
 const Items = () => {
 

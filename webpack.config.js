@@ -27,7 +27,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      title: 'Wait App',
+      title: 'TFT CheatSheet',
     }),
     new CopyPlugin({
       patterns: [
@@ -63,7 +63,6 @@ module.exports = {
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },
-          { loader: 'sass-loader' },
         ],
       },
       {

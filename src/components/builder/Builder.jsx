@@ -18,7 +18,7 @@ import Origin from 'components/common/Origin'
 
 import { getCompoBonuses } from 'lib/utils/BonusUtils'
 
-import './_builder.scss'
+import './_builder.css'
 
 const CompoBuilder = () => {
   // Hooks

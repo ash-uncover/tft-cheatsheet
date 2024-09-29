@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './_hexagon.scss'
+import './_hexagon.css'
 
 const Hexagon = ({ children }) => {
   return (

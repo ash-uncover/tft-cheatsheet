@@ -1,15 +1,15 @@
 .champions {
 
   --trait-gap: 12px;
-  .app-page-content {
+  & .app-page-content {
     width: 700px;
   }
 
-  .champions-section+.champions-section {
+  & .champions-section+.champions-section {
     margin-top: 1rem;
   }
 
-  .trait-tiles {
+  & .trait-tiles {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,12 +17,12 @@
     width: 100%;
     padding: 0 1rem;
     box-sizing: border-box;
-    >.trait-tile {
+    & > .trait-tile {
       cursor: pointer;
       width: 4%;
       aspect-ratio: 1;
-      >.trait-tile-content {
-        >img {
+      & > .trait-tile-content {
+        & > img {
           height: 100%;
           width: 100%;
         }
@@ -30,12 +30,12 @@
     }
   }
 
-  .champion-tiles {
+  & .champion-tiles {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    .champion-tile {
+    & .champion-tile {
       cursor: pointer;
       padding: 3px;
       width: 10%;
@@ -50,8 +50,8 @@
   }
 
   &:hover {
-    .trait-tiles {
-      .trait-tile.highlight {
+    & .trait-tiles {
+      & .trait-tile.highlight {
         border-radius: 50%;
         transform: scale(1.5);
         &.classe {
@@ -64,46 +64,46 @@
         }
       }
     }
-    .champion-tiles {
-      .champion-tile.highlight {
+    & .champion-tiles {
+      & .champion-tile.highlight {
         &.partial-classe {
           opacity: 0.3;
-          .champion {
+          & .champion {
             box-shadow: 0 0 5px 2px rgb(100 255 100 / 90%);
           }
         }
         &.partial-origin {
           opacity: 0.3;
-          .champion {
+          & .champion {
             box-shadow: 0 0 5px 2px rgb(100 100 255 / 90%);
           }
         }
         &.partial-classe.partial-origin {
           opacity: 0.3;
-          .champion {
+          & .champion {
             box-shadow: 0 0 5px 2px rgb(255 215 0 / 85%);
           }
         }
         &.full-classe {
           opacity: 0.8;
-          .champion {
+          & .champion {
             box-shadow: 0 0 5px 2px rgb(100 255 100 / 90%);
           }
         }
         &.full-origin {
           opacity: 0.8;
-          .champion {
+          & .champion {
             box-shadow: 0 0 5px 2px rgb(100 100 255 / 90%);
           }
         }
         &.full {
           opacity: 1;
-          .champion {
+          & .champion {
             box-shadow: 0 0 5px 2px rgb(255 215 0 / 85%);
           }
         }
       }
-      .champion-tile:not(.highlight) {
+      & .champion-tile:not(.highlight) {
         opacity: 0.2;
         filter: grayscale(1);
       }

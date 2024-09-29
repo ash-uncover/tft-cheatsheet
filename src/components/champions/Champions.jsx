@@ -17,7 +17,7 @@ import {
 import AppPage from 'components/app/AppPage'
 import Champion from 'components/common/Champion'
 
-import './_champions.scss'
+import './_champions.css'
 
 const Champions = () => {
 

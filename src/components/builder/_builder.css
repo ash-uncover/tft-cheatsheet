@@ -1,16 +1,16 @@
 .builder {
 
-  .builder-section {
+  & .builder-section {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
   }
-  .builder-section+.builder-section {
+  & .builder-section+.builder-section {
     margin-top: 0.5rem;
   }
 
-  .builder-compo {
-    .builder-compo-bonus {
+  & .builder-compo {
+    & .builder-compo-bonus {
       --classe-size: 24px;
       --origin-size: 24px;
       display: flex;
@@ -18,10 +18,10 @@
       gap: 0.25rem;
       font-size: 14px;
     }
-    .builder-compo-champion {
+    & .builder-compo-champion {
       --champion-size: 48px;
     }
-    .builder-compo-button {
+    & .builder-compo-button {
       width: 52px;
       height: 52px;
       margin-left: auto;
@@ -29,8 +29,8 @@
     }
   }
 
-  .builder-selector {
-    .builder-selector-champion {
+  & .builder-selector {
+    & .builder-selector-champion {
       --champion-size: 32px;
       filter: grayscale(1);
       &:hover:not(.selected) {
