@@ -3,11 +3,6 @@ import {
   Service
 } from '@uncover/js-utils-fetch'
 
-const DataConfig = new Config({
-  server: 'http://localhost:8080',
-  useDebug: false,
-})
-
 const getBuilds = async () => {
   const url = '/builds.json'
   const options = {
@@ -68,7 +63,12 @@ const getOrigins = async () => {
   return responseData
 }
 
-const DataService = new Service(DataConfig, '/data', {
+const DataConfig = new Config({
+  server: 'http://localhost:8080',
+  useDebug: false,
+})
+
+export const DataService = new Service(DataConfig, '/data', {
   v1: {
     data: {
       builds: {
@@ -92,5 +92,3 @@ const DataService = new Service(DataConfig, '/data', {
     }
   }
 })
-
-export default DataService

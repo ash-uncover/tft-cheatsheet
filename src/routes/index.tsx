@@ -5,8 +5,8 @@ import {
 } from '../lib/hooks'
 
 import {
-  selectors as DataSelectors
-} from '../store/data'
+  DataSelectors
+} from '../store/data/data.selectors'
 
 import Home from '../components/home/Home'
 import HomeError from '../components/home/HomeError'

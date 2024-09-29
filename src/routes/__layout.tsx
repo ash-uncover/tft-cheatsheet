@@ -7,8 +7,8 @@ import {
 } from '../lib/hooks'
 
 import {
-  selectors as DataSelectors
-} from '../store/data'
+  DataSelectors
+} from '../store/data/data.selectors'
 
 import {
   BrowserRouter as Router,
@@ -47,7 +47,7 @@ export const Root = () => {
     case DataStates.SUCCESS: {
       return (
         <>
-          <Router hashType='noslash'>
+          <Router>
             <AppHeader />
             <Routes>
               <Route path='/' element={<RouteHome />} />

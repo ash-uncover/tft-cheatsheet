@@ -10,9 +10,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.6.0",
-    "@uncover/js-utils": "0.0.16",
     "@uncover/js-utils-fetch": "0.0.6",
-    "@uncover/js-utils-logger": "0.2.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-i18next": "15.0.2",

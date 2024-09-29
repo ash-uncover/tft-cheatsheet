@@ -15,7 +15,7 @@ module.exports = {
 
   resolve: {
     modules: [DIR_NODE_MODULES, DIR_SRC],
-    extensions: ['.ts', '.tsx', '.css'],
+    extensions: ['.js', '.ts', '.tsx', '.css'],
   },
 
   output: {

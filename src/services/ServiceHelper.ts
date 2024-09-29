@@ -2,7 +2,9 @@ import {
   DataSlice 
 } from '../store/data/data.slice'
 
-import DataService from './DataService'
+import { 
+  DataService 
+} from './DataService'
 
 export const loadData = async (dispatch, refresh = false) => {
   dispatch(DataSlice.actions.loadRequest({}))
