@@ -2,19 +2,19 @@ import React from 'react'
 
 import {
   useSelector,
-} from 'lib/hooks'
+} from '../lib/hooks'
 
 import {
   selectors as DataSelectors
-} from 'store/data'
+} from '../store/data'
 
-import Home from 'components/home/Home'
-import HomeError from 'components/home/HomeError'
-import HomeLoading from 'components/home/HomeLoading'
+import Home from '../components/home/Home'
+import HomeError from '../components/home/HomeError'
+import HomeLoading from '../components/home/HomeLoading'
 
-import DataStates from 'lib/constants/DataStates'
+import DataStates from '../lib/constants/DataStates'
 
-const RouteRoot = () => {
+export const RouteHome = () => {
 
   const status = useSelector(DataSelectors.status)
 
@@ -32,5 +32,3 @@ const RouteRoot = () => {
     }
   }
 }
-
-export default RouteRoot

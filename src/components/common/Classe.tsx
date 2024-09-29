@@ -1,12 +1,11 @@
 import React from 'react'
 
-import Hexagon from 'components/common/Hexagon'
+import Hexagon from './Hexagon'
 
 import './_classe.css'
 
 const Classe = ({
   id,
-  name,
   bonus,
 }) => {
   // Rendering

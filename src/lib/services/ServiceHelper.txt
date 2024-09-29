@@ -1,16 +1,16 @@
 import {
     actions as AppActions,
-} from 'store/app'
+} from '../../store/app'
 
 import {
     actions as SongsActions,
-} from 'store/data/songs'
+} from '../../store/data/songs'
 
 import {
     actions as ImagesActions,
-} from 'store/data/images'
+} from '../../store/data/images'
 
-import RestService from 'lib/services/RestService'
+import RestService from '../../lib/services/RestService'
 
 export const loadSongs = (dispatch) => {
     dispatch(SongsActions.songsGetFetch())

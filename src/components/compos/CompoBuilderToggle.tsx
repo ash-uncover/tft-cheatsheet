@@ -2,7 +2,7 @@ import React from 'react'
 
 import {
   useState,
-} from 'lib/hooks'
+} from '../../lib/hooks'
 
 import CompoBuilder from './CompoBuilder'
 

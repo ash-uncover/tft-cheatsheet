@@ -1,12 +1,11 @@
 import React from 'react'
 
-import Hexagon from 'components/common/Hexagon'
+import Hexagon from './Hexagon'
 
 import './_origin.css'
 
 const Origin = ({
   id,
-  name,
   bonus,
 }) => {
   // Rendering

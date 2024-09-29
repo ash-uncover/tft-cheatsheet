@@ -2,7 +2,7 @@ import React from 'react'
 
 import {
   useLocation,
-} from 'lib/hooks'
+} from '../../lib/hooks'
 
 import {
   Link,
@@ -19,31 +19,31 @@ const AppHeader = () => {
     <div className='app-header'>
       <Link
         to='/'
-        className={location.pathname === '/' ? 'selected' : null}
+        className={location.pathname === '/' ? 'selected' : ''}
       >
         home
       </Link>
       <Link
         to='/items'
-        className={location.pathname.startsWith('/items') ? 'selected' : null}
+        className={location.pathname.startsWith('/items') ? 'selected' : ''}
       >
         items
       </Link>
       <Link
         to='/champions'
-        className={location.pathname.startsWith('/champions') ? 'selected' : null}
+        className={location.pathname.startsWith('/champions') ? 'selected' : ''}
       >
         champions
       </Link>
       <Link
         to='/builds'
-        className={location.pathname.startsWith('/builds') ? 'selected' : null}
+        className={location.pathname.startsWith('/builds') ? 'selected' : ''}
       >
         builds
       </Link>
       <Link
         to='/compos'
-        className={location.pathname.startsWith('/compos') ? 'selected' : null}
+        className={location.pathname.startsWith('/compos') ? 'selected' : ''}
       >
         compos
       </Link>

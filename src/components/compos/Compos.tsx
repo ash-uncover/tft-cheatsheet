@@ -4,20 +4,22 @@ import {
   useDispatch,
   useSelector,
   useState,
-} from 'lib/hooks'
+} from '../../lib/hooks'
 
-import {
-  actions as DataActions,
-  selectors as DataSelectors,
-} from 'store/data'
+import { 
+  DataSelectors
+} from '../../store/data/data.selectors'
+import { 
+  DataSlice 
+} from '../../store/data/data.slice'
 
-import AppPage from 'components/app/AppPage'
-import AppPageSection from 'components/app/AppPageSection'
+import AppPage from '../app/AppPage'
+import AppPageSection from '../app/AppPageSection'
 
 import CompoBuilderToggle from './CompoBuilderToggle'
 import ComposListItem from './ComposListItem'
 
-import * as ServiceHelper from 'services/ServiceHelper'
+import * as ServiceHelper from '../../services/ServiceHelper'
 
 import './_compos.css'
 
@@ -39,8 +41,8 @@ const Compos = () => {
     const file = event.target.files[0]
     const fileReader = new FileReader()
     fileReader.onload = function () {
-      const data = JSON.parse(fileReader.result)
-      dispatch(DataActions.importCompos(data))
+      const data = JSON.parse(fileReader.result as string)
+      dispatch(DataSlice.actions.importCompos(data))
     }
     fileReader.readAsText(file)
   }
@@ -60,7 +62,7 @@ const Compos = () => {
   }
 
   const onCreateCompo = (compo) => {
-    dispatch(DataActions.createCompo({ compo }))
+    dispatch(DataSlice.actions.createCompo({ compo }))
   }
 
   // Rendering

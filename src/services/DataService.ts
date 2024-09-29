@@ -8,7 +8,6 @@ const DataConfig = new Config({
   useDebug: false,
 })
 
-
 const getBuilds = async () => {
   const url = '/builds.json'
   const options = {

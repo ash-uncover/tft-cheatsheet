@@ -1,16 +1,15 @@
 import React from 'react'
 
 import {
-  useDispatch,
   useSelector,
   useState,
-} from 'lib/hooks'
+} from '../../lib/hooks'
 
-import {
-  selectors as DataSelectors,
-} from 'store/data'
+import { 
+  DataSelectors
+} from '../../store/data/data.selectors'
 
-import AppPage from 'components/app/AppPage'
+import AppPage from '../app/AppPage'
 
 import './_builds.css'
 

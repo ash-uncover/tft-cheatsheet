@@ -2,13 +2,13 @@ import React from 'react'
 
 import {
   useDispatch,
-} from 'lib/hooks'
+} from '../../lib/hooks'
 
-import {
-  actions as DataActions,
-} from 'store/data'
+import { 
+  DataSlice 
+} from '../../store/data/data.slice'
 
-import Champion from 'components/common/Champion'
+import Champion from '../common/Champion'
 
 const ComposListItem = ({ compo }) => {
   // Hooks
@@ -18,7 +18,7 @@ const ComposListItem = ({ compo }) => {
   // Events
 
   const onDeleteCompo = () => {
-    dispatch(DataActions.deleteCompo(compo))
+    dispatch(DataSlice.actions.deleteCompo(compo))
   }
 
   // Rendering
@@ -37,7 +37,7 @@ const ComposListItem = ({ compo }) => {
         </button>
       </div>
       <div className='compos-list-item-champions'>
-        {compo.champions.map(id => <Champion key={id} id={id} />)}
+        {compo.champions.map(id => <Champion key={id} id={id} tier={1} name={id} />)}
       </div>
     </div>
   )

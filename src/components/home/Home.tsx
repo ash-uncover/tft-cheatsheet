@@ -1,6 +1,6 @@
 import React from 'react'
 
-import AppPage from 'components/app/AppPage'
+import AppPage from '../app/AppPage'
 
 import './_home.css'
 

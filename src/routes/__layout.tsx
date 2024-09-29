@@ -4,11 +4,11 @@ import {
   useDispatch,
   useEffect,
   useSelector,
-} from 'lib/hooks'
+} from '../lib/hooks'
 
 import {
   selectors as DataSelectors
-} from 'store/data'
+} from '../store/data'
 
 import {
   BrowserRouter as Router,
@@ -16,19 +16,19 @@ import {
   Routes,
 } from 'react-router-dom'
 
-import DataStates from 'lib/constants/DataStates'
+import DataStates from '../lib/constants/DataStates'
 
-import AppHeader from 'components/app/AppHeader'
+import AppHeader from '../components/app/AppHeader'
 
-import RouteHome from 'routes'
-import RouteItems from 'routes/items'
-import RouteChampions from 'routes/champions'
-import RouteBuilds from 'routes/builds'
-import RouteCompos from 'routes/compos'
+import { RouteHome } from './'
+import { RouteItems } from './items'
+import { RouteChampions } from './champions'
+import { RouteBuilds } from './builds'
+import { RouteCompos } from './compos'
 
-import * as ServiceHelper from 'services/ServiceHelper'
+import * as ServiceHelper from '../services/ServiceHelper'
 
-const Root = () => {
+export const Root = () => {
 
   const dispatch = useDispatch()
 
@@ -68,5 +68,3 @@ const Root = () => {
     }
   }
 }
-
-export default Root

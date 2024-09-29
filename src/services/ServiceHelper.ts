@@ -1,11 +1,11 @@
-import {
-  actions as DataActions,
-} from 'store/data'
+import { 
+  DataSlice 
+} from '../store/data/data.slice'
 
-import DataService from 'services/DataService'
+import DataService from './DataService'
 
 export const loadData = async (dispatch, refresh = false) => {
-  dispatch(DataActions.loadRequest())
+  dispatch(DataSlice.actions.loadRequest({}))
   Promise.all([
     DataService.api.v1.data.builds.get(),
     DataService.api.v1.data.champions.get(),
@@ -15,10 +15,10 @@ export const loadData = async (dispatch, refresh = false) => {
     DataService.api.v1.data.origins.get(),
   ])
     .then(([{builds}, {champions}, {classes}, {compos}, {items}, {origins}]) => {
-      dispatch(DataActions.loadSuccess({ builds, champions, classes, compos, items, origins, refresh }))
+      dispatch(DataSlice.actions.loadSuccess({ builds, champions, classes, compos, items, origins, refresh }))
 
     })
     .catch((error) => {
-      dispatch(DataActions.loadFailure({ error }))
+      dispatch(DataSlice.actions.loadFailure({ error }))
     })
 }
