@@ -4,7 +4,7 @@ import { DataSlice } from './data/data.slice'
 
 export default configureStore({
   reducer: {
-    app: AppSlice.reducer,
+    app: AppSlice,
     data: DataSlice.reducer,
   },
 })

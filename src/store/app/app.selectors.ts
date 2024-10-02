@@ -3,26 +3,12 @@ import { AppState } from './app.state'
 
 const root = (state: RootState): AppState => state.app
 
-const championHover = (state: RootState) => root(state).championHover
-const classeHover = (state: RootState) => root(state).classeHover
-const itemHover = (state: RootState) => root(state).itemHover
-const originHover = (state: RootState) => root(state).originHover
-
-const championSelected = (state: RootState) => root(state).championSelected
-const classeSelected = (state: RootState) => root(state).classeSelected
-const itemSelected = (state: RootState) => root(state).itemSelected
-const originSelected = (state: RootState) => root(state).originSelected
+const champions = (state: RootState) => root(state).champions
+const items = (state: RootState) => root(state).items
 
 export const AppSelectors = {
   root,
 
-  championHover,
-  classeHover,
-  itemHover,
-  originHover,
-
-  championSelected,
-  classeSelected,
-  itemSelected,
-  originSelected,
+  champions,
+  items,
 }

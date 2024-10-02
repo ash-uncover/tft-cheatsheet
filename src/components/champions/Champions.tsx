@@ -5,15 +5,9 @@ import {
   useSelector,
 } from '../../lib/hooks'
 
-import { 
-  AppSelectors
-} from '../../store/app/app.selectors'
-import { 
-  AppSlice 
-} from '../../store/app/app.slice'
-import { 
-  DataSelectors
-} from '../../store/data/data.selectors'
+import { DataSelectors } from '../../store/data/data.selectors'
+import { ChampionsSlice } from '../../store/app/champions/champions.slice'
+import { ChampionsSelectors } from '../../store/app/champions/champions.selectors'
 
 import AppPage from '../app/AppPage'
 import { Champion } from '../common/Champion'
@@ -63,26 +57,26 @@ const Champions = () => {
 const OriginTile = ({ origin }) => {
   // Hooks
   const dispatch = useDispatch()
-  const championHover = useSelector(AppSelectors.championHover)
-  const championSelected = useSelector(AppSelectors.championSelected)
-  const originHover = useSelector(AppSelectors.originHover)
-  const originSelected = useSelector(AppSelectors.originSelected)
+  const championHover = useSelector(ChampionsSelectors.championHover)
+  const championSelected = useSelector(ChampionsSelectors.championSelected)
+  const originHover = useSelector(ChampionsSelectors.originHover)
+  const originSelected = useSelector(ChampionsSelectors.originSelected)
 
   const originActive = originSelected || originHover
   const championActive = championSelected || championHover
 
   // Events
   const onMouseEnter = () => {
-    dispatch(AppSlice.actions.hoverOrigin({ ...origin }))
+    dispatch(ChampionsSlice.actions.hoverOrigin({ ...origin }))
   }
   const onMouseLeave = () => {
-    dispatch(AppSlice.actions.unhoverOrigin())
+    dispatch(ChampionsSlice.actions.unhoverOrigin())
   }
   const onClick = () => {
     if (originSelected?.id === origin.id) {
-      dispatch(AppSlice.actions.unselectOrigin())
+      dispatch(ChampionsSlice.actions.unselectOrigin())
     } else {
-      dispatch(AppSlice.actions.selectOrigin({ ...origin }))
+      dispatch(ChampionsSlice.actions.selectOrigin({ ...origin }))
     }
   }
 
@@ -113,26 +107,26 @@ const OriginTile = ({ origin }) => {
 const ClasseTile = ({ classe }) => {
   // Hooks
   const dispatch = useDispatch()
-  const championHover = useSelector(AppSelectors.championHover)
-  const championSelected = useSelector(AppSelectors.championSelected)
-  const classeHover = useSelector(AppSelectors.classeHover)
-  const classeSelected = useSelector(AppSelectors.classeSelected)
+  const championHover = useSelector(ChampionsSelectors.championHover)
+  const championSelected = useSelector(ChampionsSelectors.championSelected)
+  const classeHover = useSelector(ChampionsSelectors.classeHover)
+  const classeSelected = useSelector(ChampionsSelectors.classeSelected)
 
   const classeActive = classeSelected || classeHover
   const championActive = championSelected || championHover
 
   // Events
   const onMouseEnter = () => {
-    dispatch(AppSlice.actions.hoverClass({ ...classe }))
+    dispatch(ChampionsSlice.actions.hoverClass({ ...classe }))
   }
   const onMouseLeave = () => {
-    dispatch(AppSlice.actions.unhoverClass())
+    dispatch(ChampionsSlice.actions.unhoverClass())
   }
   const onClick = () => {
     if (classeSelected?.id === classe.id) {
-      dispatch(AppSlice.actions.unselectClass())
+      dispatch(ChampionsSlice.actions.unselectClass())
     } else {
-      dispatch(AppSlice.actions.selectClass({ ...classe }))
+      dispatch(ChampionsSlice.actions.selectClass({ ...classe }))
     }
   }
 
@@ -164,12 +158,12 @@ const ChampionTile = ({ champion }) => {
   // Hooks
   const dispatch = useDispatch()
 
-  const championHover = useSelector(AppSelectors.championHover)
-  const championSelected = useSelector(AppSelectors.championSelected)
-  const classeHover = useSelector(AppSelectors.classeHover)
-  const classeSelected = useSelector(AppSelectors.classeSelected)
-  const originHover = useSelector(AppSelectors.originHover)
-  const originSelected = useSelector(AppSelectors.originSelected)
+  const championHover = useSelector(ChampionsSelectors.championHover)
+  const championSelected = useSelector(ChampionsSelectors.championSelected)
+  const classeHover = useSelector(ChampionsSelectors.classeHover)
+  const classeSelected = useSelector(ChampionsSelectors.classeSelected)
+  const originHover = useSelector(ChampionsSelectors.originHover)
+  const originSelected = useSelector(ChampionsSelectors.originSelected)
 
   const championActive = championSelected || championHover
   const classeActive = classeSelected || classeHover
@@ -177,16 +171,16 @@ const ChampionTile = ({ champion }) => {
 
   // Events
   const onMouseEnter = () => {
-    dispatch(AppSlice.actions.hoverChampion({ ...champion }))
+    dispatch(ChampionsSlice.actions.hoverChampion({ ...champion }))
   }
   const onMouseLeave = () => {
-    dispatch(AppSlice.actions.unhoverChampion())
+    dispatch(ChampionsSlice.actions.unhoverChampion())
   }
   const onClick = () => {
     if (championSelected?.id === champion.id) {
-      dispatch(AppSlice.actions.unselectChampion())
+      dispatch(ChampionsSlice.actions.unselectChampion())
     } else {
-      dispatch(AppSlice.actions.selectChampion({ ...champion }))
+      dispatch(ChampionsSlice.actions.selectChampion({ ...champion }))
     }
   }
 

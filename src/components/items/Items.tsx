@@ -5,18 +5,9 @@ import {
   useSelector,
 } from '../../lib/hooks'
 
-import { 
-  AppSelectors
-} from '../../store/app/app.selectors'
-import { 
-  AppSlice 
-} from '../../store/app/app.slice'
-import { 
-  DataSelectors
-} from '../../store/data/data.selectors'
-import { 
-  DataSlice 
-} from '../../store/data/data.slice'
+import { DataSelectors } from '../../store/data/data.selectors'
+import { ItemsSelectors } from '../../store/app/items/items.selectors'
+import { ItemsSlice } from '../../store/app/items/items.slice'
 
 import AppPage from '../app/AppPage'
 
@@ -86,18 +77,18 @@ const ItemsTableRow = ({ items, indexRow }) => {
 const ItemsTableCell = ({ item, indexRow, indexCol }) => {
   // Hooks
   const dispatch = useDispatch()
-  const itemHover = useSelector(AppSelectors.itemHover)
+  const itemHover = useSelector(ItemsSelectors.itemHover)
 
   // Events
   const onMouseEnter = () => {
-    dispatch(AppSlice.actions.hoverItem({
+    dispatch(ItemsSlice.actions.hoverItem({
       id: item.id,
       indexRow,
       indexCol,
     }))
   }
   const onMouseLeave = () => {
-    dispatch(AppSlice.actions.hoverItem({
+    dispatch(ItemsSlice.actions.hoverItem({
       id: null,
       indexRow: null,
       indexCol: null,
