@@ -1,11 +1,20 @@
 export interface AppState {
-  classeHover: any
-  championHover: any
+  championHover: ChampionActiveState | null
+  championSelected: ChampionActiveState | null
+  classeHover: TraitActiveState | null
+  classeSelected: TraitActiveState | null
+  originHover: TraitActiveState | null
+  originSelected: TraitActiveState | null
+  
   itemHover: any
-  originHover: any
-
-  classeSelected: any
-  championSelected: any
   itemSelected: any
-  originSelected: any
+}
+
+export interface ChampionActiveState {
+  id: string
+  origins: string[]
+  classes: string[]
+}
+export interface TraitActiveState {
+  id: string
 }

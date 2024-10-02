@@ -5,20 +5,22 @@ import {
 } from '@reduxjs/toolkit'
 
 import { 
-  AppState 
+  AppState, 
+  ChampionActiveState,
+  TraitActiveState
 } from './app.state'
 
 // #region State
-export const getInitialState = () => ({
-  classeHover: {},
-  championHover: {},
-  itemHover: {},
-  originHover: {},
-
-  classeSelected: {},
-  championSelected: {},
-  itemSelected: {},
-  originSelected: {},
+export const getInitialState = (): AppState => ({
+  championHover: null,
+  championSelected: null,
+  classeHover: null,
+  classeSelected: null,
+  originHover: null,
+  originSelected: null,
+  
+  itemHover: null,
+  itemSelected: null,
 })
 // #endregion
 
@@ -28,111 +30,175 @@ export const getInitialState = () => ({
  * Reducers definition
  */
 
-// #region > Hover Champ
-interface IChampionHoverPayload {
-  id: string
-  origins: any
-  classes: any
-}
+// #region > Champion
+
+/**
+ * Champion Stuff
+ */
+
+// #region >> Hover
 export const hoverChampion: CaseReducer<
   AppState,
-  PayloadAction<IChampionHoverPayload>
+  PayloadAction<ChampionActiveState>
 > = (state, action) => {
-  if (!state.championSelected.id) {
-    state.championHover = {
-      id: action.payload.id,
-      origins: action.payload.origins,
-      classes: action.payload.classes,
-    }
+  if (!state.championSelected?.id && !state.classeSelected?.id && !state.originSelected?.id) {
+    state.classeHover = null
+    state.originHover = null
+    state.championHover = action.payload
   }
 }
 // #endregion
 
-// #region > Unhover Champ
+// #region >> Unhover
 export const unhoverChampion: CaseReducer<
   AppState,
   PayloadAction<void>
-> = (state, action) => {
-  state.championHover = {}
+> = (state) => {
+  state.championHover = null
 }
 // #endregion
 
-
-// #region > Select Champ
-interface IChampionSelectPayload {
-  id: string
-  origins: any
-  classes: any
-}
+// #region >> Select
 export const selectChampion: CaseReducer<
   AppState,
-  PayloadAction<IChampionSelectPayload>
+  PayloadAction<ChampionActiveState>
 > = (state, action) => {
-  if (action.payload.id) {
-    state.championHover = {}
-    state.championSelected = {
-      id: action.payload.id,
-      origins: action.payload.origins,
-      classes: action.payload.classes,
-    }
-  } else {
-    state.championSelected = {}
-    state.championHover = {
-      id: action.payload.id,
-      origins: action.payload.origins,
-      classes: action.payload.classes,
-    }
-  }
+  state.championHover = null
+  state.championSelected = action.payload
+  state.classeHover = null
+  state.classeSelected = null
+  state.originHover = null
+  state.originSelected = null
 }
 // #endregion
 
-// #region > Unselect Champ
+// #region >> Unselect
 export const unselectChampion: CaseReducer<
   AppState,
   PayloadAction<void>
-> = (state, action) => {
+> = (state) => {
   state.championHover = state.championSelected
-  state.championSelected = {}
+  state.championSelected = null
 }
 // #endregion
 
-// #region > Hover Class
-interface IHoverClassPayload {
-  id?: string
-}
+// #endregion
+
+// #region > Class
+
+/**
+ * Class Stuff
+ */
+
+// #region >> Hover
 export const hoverClass: CaseReducer<
   AppState,
-  PayloadAction<IHoverClassPayload>
+  PayloadAction<TraitActiveState>
 > = (state, action) => {
-  if (!state.classeHover.locked) {
-    state.classeHover = {
-      id: action.payload.id
-    }
+  if (!state.championSelected?.id && !state.classeSelected?.id && !state.originSelected?.id) {
+    state.classeHover = action.payload
+    state.originHover = null
+    state.championHover = null
   }
 }
 // #endregion
 
-// #region > Select Class 
-interface ISelectClassPayload {
-  id: string
-  classeId: string
+// #region >> Unhover
+export const unhoverClass: CaseReducer<
+  AppState,
+  PayloadAction<void>
+> = (state) => {
+  state.classeHover = null
 }
+// #endregion
+
+// #region >> Select 
 export const selectClass: CaseReducer<
   AppState,
-  PayloadAction<ISelectClassPayload>
+  PayloadAction<TraitActiveState>
 > = (state, action) => {
-  if (action.payload.classeId) {
-    state.classeHover = {
-      locked: true,
-      id: action.payload.id
-    }
-  } else {
-    state.itemHover.locked = false
+  state.classeHover = null
+  state.classeSelected = action.payload
+  state.championHover = null
+  state.championSelected = null
+  state.originHover = null
+  state.originSelected = null
+}
+// #endregion
+
+// #region >> Unselect
+export const unselectClass: CaseReducer<
+  AppState,
+  PayloadAction<void>
+> = (state) => {
+  state.classeHover = state.classeSelected
+  state.classeSelected = null
+}
+// #endregion
+
+// #endregion
+
+// #region > Hover Origin
+export const hoverOrigin: CaseReducer<
+  AppState,
+  PayloadAction<TraitActiveState>
+> = (state, action) => {
+  if (!state.championSelected?.id && !state.classeSelected?.id && !state.originSelected?.id) {
+    state.championHover = null
+    state.classeHover = null
+    state.originHover = action.payload
   }
 }
 // #endregion
 
-// #region > Hover Item
+// #region > Origin
+
+/**
+ * Origin Stuff
+ */
+
+// #region >> Unhover
+export const unhoverOrigin: CaseReducer<
+  AppState,
+  PayloadAction<void>
+> = (state) => {
+  state.originHover = null
+}
+// #endregion
+
+// #region >> Select 
+export const selectOrigin: CaseReducer<
+  AppState,
+  PayloadAction<TraitActiveState>
+> = (state, action) => {
+  state.championHover = null
+  state.championSelected = null
+  state.classeHover = null
+  state.classeSelected = null
+  state.originHover = null
+  state.originSelected = action.payload
+}
+// #endregion
+
+// #region >> Unselect
+export const unselectOrigin: CaseReducer<
+  AppState,
+  PayloadAction<void>
+> = (state) => {
+  state.originHover = state.originSelected
+  state.originSelected = null
+}
+// #endregion
+
+// #endregion
+
+// #region > Item
+
+/**
+ * Item Stuff
+ */
+
+// #region >> Hover
 interface IHoverItemPayload {
   id: string
   indexRow: number
@@ -152,7 +218,7 @@ export const hoverItem: CaseReducer<
 }
 // #endregion
 
-// #region > Select Item
+// #region >> Select
 interface ISelectItemPayload {
   id: string
   itemId: string
@@ -176,40 +242,6 @@ export const selectItem: CaseReducer<
 }
 // #endregion
 
-// #region > Hover Origin
-interface IHoverOriginPayload {
-  id?: string
-}
-export const hoverOrigin: CaseReducer<
-  AppState,
-  PayloadAction<IHoverOriginPayload>
-> = (state, action) => {
-  if (!state.originHover.locked) {
-    state.originHover = {
-      id: action.payload.id,
-    }
-  }
-}
-// #endregion
-
-// #region > Select Origin 
-interface ISelectOriginPayload {
-  id: string
-  originId: string
-}
-export const selectOrigin: CaseReducer<
-  AppState,
-  PayloadAction<ISelectOriginPayload>
-> = (state, action) => {
-  if (action.payload.originId) {
-    state.originHover = {
-      locked: true,
-      id: action.payload.id,
-    }
-  } else {
-    state.itemHover.locked = false
-  }
-}
 // #endregion
 
 // #endregion
@@ -224,12 +256,19 @@ export const AppSlice = createSlice({
     unhoverChampion,
     selectChampion,
     unselectChampion,
+    
     hoverClass,
+    unhoverClass,
     selectClass,
+    unselectClass,
+    
+    hoverOrigin,
+    unhoverOrigin,
+    selectOrigin,
+    unselectOrigin,
+    
     hoverItem,
     selectItem,
-    hoverOrigin,
-    selectOrigin,
   },
 })
 // #endregion
