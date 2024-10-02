@@ -12,28 +12,19 @@
   }
 
   &.champion-tier-1 {
-    --champion-border-tier: #808080;
+    --champion-border-tier: var(--champion-tier-1--color);
   }
   &.champion-tier-2 {
-    --champion-border-tier: #11B288;
+    --champion-border-tier: var(--champion-tier-2--color);
   }
   &.champion-tier-3 {
-    --champion-border-tier: #207AC7;
+    --champion-border-tier: var(--champion-tier-3--color);
   }
   &.champion-tier-4 {
-    --champion-border-tier: #C440DA;
+    --champion-border-tier: var(--champion-tier-4--color);
   }
   &.champion-tier-5 {
-    --champion-border-tier: #FFB93B;
-  }
-  &.champion-tier-6 {
-    --champion-border-tier: #207AC7;
-  }
-  &.champion-tier-7 {
-    --champion-border-tier: #C440DA;
-  }
-  &.champion-tier-8 {
-    --champion-border-tier: #FFB93B;
+    --champion-border-tier: var(--champion-tier-5--color);
   }
 
   &.show-tier {

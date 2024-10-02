@@ -9,9 +9,9 @@ import {
   DataSelectors
 } from '../../store/data/data.selectors'
 
-import Champion from '../common/Champion'
-import Classe from '../common/Classe'
-import Origin from '../common/Origin'
+import { Champion } from '../common/Champion'
+import { Classe } from '../common/Classe'
+import { Origin } from '../common/Origin'
 
 import BonusUtils from '../../lib/utils/BonusUtils'
 import ChampionUtils from '../../lib/utils/ChampionUtils'
@@ -83,18 +83,21 @@ const CompoBuilder = ({ onCreateCompo, onCancel }) => {
             {...bonus}
           />
         ))}
-        {compoChampions.map(champion => (
-          <BuilderCompoChampion
-            key={champion.id}
-            champion={champion}
-            onClick={() => onRemoveChampion(champion)}
-          />
-        ))}
+        {compoChampions
+          .sort((c1, c2) => (c1.tier - c2.tier) || c1.name.localeCompare(c2.name))
+          .map(champion => (
+            <BuilderCompoChampion
+              key={champion.id}
+              champion={champion}
+              onClick={() => onRemoveChampion(champion)}
+            />
+          ))
+        }
 
       </div>
 
       <div className='compo-builder-section compo-builder-selector'>
-        {champions.map(champion => (
+        {Object.values(champions).map(champion => (
           <BuilderSelectorChampion
             key={champion.id}
             champion={champion}

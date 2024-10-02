@@ -2,9 +2,13 @@ import {
   Config,
   Service
 } from '@uncover/js-utils-fetch'
+import { 
+  DataCustomChampion,
+  LolDataChampion 
+} from '../lib/model/DataChampion'
 
 const getBuilds = async () => {
-  const url = '/builds.json'
+  const url = '/data/builds.json'
   const options = {
     method: 'GET',
   }
@@ -13,18 +17,38 @@ const getBuilds = async () => {
   return responseData
 }
 
-const getChampions = async () => {
-  const url = '/champions.json'
+const getChampions = async (): Promise<Record<string, DataCustomChampion>> => {
+  const url = '/data/champions.json'
+  const options = {
+    method: 'GET',
+  }
+  const response = await DataService.fetch(url, options)
+  const responseData = await response.json() as DataCustomChampion[]
+  const result = {}
+  responseData.forEach(champion => {
+    result[champion.id] = champion
+  })
+  return result
+}
+
+const getLolChampions = async (): Promise<Record<string, LolDataChampion>> => {
+  const url = '/lol-data/14.19.1/data/en_US/tft-champion.json'
   const options = {
     method: 'GET',
   }
   const response = await DataService.fetch(url, options)
   const responseData = await response.json()
-  return responseData
+  const result = {}
+  Object.values(responseData.data).forEach((champion: LolDataChampion) => {
+    if (champion.id.startsWith('TFT12_')) {
+      result[champion.id] = champion
+    }
+  })
+  return result
 }
 
 const getClasses = async () => {
-  const url = '/classes.json'
+  const url = '/data/classes.json'
   const options = {
     method: 'GET',
   }
@@ -34,7 +58,7 @@ const getClasses = async () => {
 }
 
 const getCompos = async () => {
-  const url = '/compos.json'
+  const url = '/data/compos.json'
   const options = {
     method: 'GET',
   }
@@ -44,7 +68,7 @@ const getCompos = async () => {
 }
 
 const getItems = async () => {
-  const url = '/items.json'
+  const url = '/data/items.json'
   const options = {
     method: 'GET',
   }
@@ -54,7 +78,7 @@ const getItems = async () => {
 }
 
 const getOrigins = async () => {
-  const url = '/origins.json'
+  const url = '/data/origins.json'
   const options = {
     method: 'GET',
   }
@@ -68,9 +92,14 @@ const DataConfig = new Config({
   useDebug: false,
 })
 
-export const DataService = new Service(DataConfig, '/data', {
+export const DataService = new Service(DataConfig, '/', {
   v1: {
     data: {
+      lol: {
+        champions: {
+          get: getLolChampions
+        },
+      },
       builds: {
         get: getBuilds
       },

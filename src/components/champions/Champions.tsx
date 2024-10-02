@@ -16,7 +16,7 @@ import {
 } from '../../store/data/data.selectors'
 
 import AppPage from '../app/AppPage'
-import Champion from '../common/Champion'
+import { Champion } from '../common/Champion'
 
 import './_champions.css'
 
@@ -45,12 +45,16 @@ const Champions = () => {
         ))}
       </div>
       <div className='champions-section champion-tiles'>
-        {champions.map((champion, index) => (
-          <ChampionTile
-            key={champion.id}
-            champion={champion}
-          />
-        ))}
+        {Object.values(champions)
+          .sort((champion1, champion2) => {
+            return champion1.tier - champion2.tier || champion1.name.localeCompare(champion2.name)
+          })
+          .map((champion, index) => (
+            <ChampionTile
+              key={champion.id}
+              champion={champion}
+            />
+          ))}
       </div>
     </AppPage>
   )
@@ -87,7 +91,7 @@ const OriginTile = ({ origin }) => {
       onMouseLeave={onMouseLeave}
     >
       <div className='trait-tile-content'>
-        <img src={`images/origins/${origin.id}.svg`} />
+        <img draggable={false} src={`images/traits/TFT12_${origin.id}.svg`} />
       </div>
     </div>
   )
@@ -124,7 +128,7 @@ const ClasseTile = ({ classe }) => {
       onMouseLeave={onMouseLeave}
     >
       <div className='trait-tile-content'>
-        <img src={`images/classes/${classe.id}.svg`} />
+        <img draggable={false} src={`images/traits/TFT12_${classe.id}.svg`} />
       </div>
     </div>
   )
@@ -133,29 +137,41 @@ const ClasseTile = ({ classe }) => {
 const ChampionTile = ({ champion }) => {
   // Hooks
   const dispatch = useDispatch()
+
   const championHover = useSelector(AppSelectors.championHover)
   const classeHover = useSelector(AppSelectors.classeHover)
   const originHover = useSelector(AppSelectors.originHover)
+
+  const championSelected = useSelector(AppSelectors.championSelected)
+
+  const championActive = championSelected.id ? championSelected : championHover
 
   // Events
   const onMouseEnter = () => {
     dispatch(AppSlice.actions.hoverChampion({ ...champion }))
   }
   const onMouseLeave = () => {
-    dispatch(AppSlice.actions.hoverChampion({}))
+    dispatch(AppSlice.actions.unhoverChampion())
+  }
+  const onClick = () => {
+    if (championSelected.id === champion.id) {
+      dispatch(AppSlice.actions.unselectChampion())
+    } else {
+      dispatch(AppSlice.actions.selectChampion({ ...champion }))
+    }
   }
 
   // Rendering
   const className = ['champion-tile']
-  if (championHover?.id === champion.id) {
+  if (championActive.id === champion.id) {
     className.push('highlight')
     className.push('full')
   } else {
-    if (championHover.classes && championHover.classes.some(c => champion.classes.includes(c))) {
+    if (championActive.classes && championActive.classes.some(c => champion.classes.includes(c))) {
       className.push('highlight')
       className.push('partial-classe')
     }
-    if (championHover.origins && championHover.origins.some(o => champion.origins.includes(o))) {
+    if (championActive.origins && championActive.origins.some(o => champion.origins.includes(o))) {
       className.push('highlight')
       className.push('partial-origin')
     }
@@ -173,12 +189,9 @@ const ChampionTile = ({ champion }) => {
       className={className.join(' ')}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      onClick={onClick}
     >
-      <Champion
-        id={champion.id}
-        name={champion.name}
-        tier={1}
-      />
+      <Champion id={champion.id} />
     </div>
   )
 }

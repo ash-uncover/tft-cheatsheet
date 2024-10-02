@@ -1,4 +1,4 @@
-export interface OriginData {
+export interface DataOrigin {
   id: string
   name: string
   bonus: {

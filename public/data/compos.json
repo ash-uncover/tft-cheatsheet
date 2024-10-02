@@ -1,9 +1,6 @@
 {
   "compos": [{
-    "id": "Ragewing Guild Xayah",
-    "champions": ["SEJUANI","TWITCH","RAKAN","HECARIM","JAYCE","XAYAH","BARD","SHYVANA"]
-  }, {
-    "id": "Terra Shyvana Ao shin",
-    "champions": ["LEE_SIN","RAKAN","BARD","AOSHIN","SHYVANA","TERRA"]
+    "id": "Witch Portal",
+    "champions": ["POPPY","ZOE","CASSIOPEIA","NEEKO","FIORA","RYZE","TARIC","MORGANA"]
   }]
 }

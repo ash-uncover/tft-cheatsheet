@@ -14,9 +14,9 @@ import {
 } from '../../store/data/data.slice'
 
 import AppPage from '../app/AppPage'
-import Champion from '../common/Champion'
-import Classe from '../common/Classe'
-import Origin from '../common/Origin'
+import { Champion } from '../common/Champion'
+import { Classe } from '../common/Classe'
+import { Origin } from '../common/Origin'
 
 import { getCompoBonuses } from '../../lib/utils/BonusUtils'
 
@@ -101,7 +101,7 @@ const CompoBuilder = () => {
       </div>
 
       <div className='builder-section builder-selector'>
-        {champions.map(champion => (
+        {Object.values(champions).map(champion => (
           <BuilderSelectorChampion
             key={champion.id}
             champion={champion}

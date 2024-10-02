@@ -4,10 +4,16 @@ import Hexagon from './Hexagon'
 
 import './_classe.css'
 
-const Classe = ({
+interface ClasseProps {
+  id: string
+  bonus: string
+  draggable?: boolean
+}
+export const Classe = ({
   id,
   bonus,
-}) => {
+  draggable
+}: ClasseProps) => {
   // Rendering
   const className = ['classe']
   className.push(`classe-${id.toLowerCase()}`)
@@ -21,6 +27,7 @@ const Classe = ({
     >
       <Hexagon>
         <img
+          draggable={Boolean(draggable)}
           className='classe-image'
           src={`images/classes/${id}.svg`}
         />
@@ -28,5 +35,3 @@ const Classe = ({
     </div>
   )
 }
-
-export default Classe

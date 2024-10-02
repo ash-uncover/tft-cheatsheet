@@ -8,7 +8,7 @@ import {
   DataSlice 
 } from '../../store/data/data.slice'
 
-import Champion from '../common/Champion'
+import {Champion} from '../common/Champion'
 
 const ComposListItem = ({ compo }) => {
   // Hooks
@@ -37,7 +37,9 @@ const ComposListItem = ({ compo }) => {
         </button>
       </div>
       <div className='compos-list-item-champions'>
-        {compo.champions.map(id => <Champion key={id} id={id} tier={1} name={id} />)}
+        {compo.champions
+          .map(id => <Champion key={id} id={id} />)
+        }
       </div>
     </div>
   )

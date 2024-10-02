@@ -8,11 +8,21 @@ const classeHover = (state: RootState) => root(state).classeHover
 const itemHover = (state: RootState) => root(state).itemHover
 const originHover = (state: RootState) => root(state).originHover
 
+const championSelected = (state: RootState) => root(state).championSelected
+const classeSelected = (state: RootState) => root(state).classeSelected
+const itemSelected = (state: RootState) => root(state).itemSelected
+const originSelected = (state: RootState) => root(state).originSelected
+
 export const AppSelectors = {
   root,
 
   championHover,
   classeHover,
   itemHover,
-  originHover,  
+  originHover,
+
+  championSelected,
+  classeSelected,
+  itemSelected,
+  originSelected,
 }

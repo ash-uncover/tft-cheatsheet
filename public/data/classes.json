@@ -1,116 +1,122 @@
 {
-  "classes": [{
-    "id": "ASSASSIN",
-    "bonus": {
-      "bronze": 2,
-      "gold": 4,
-      "platinium": 6
+  "classes": [
+    {
+      "id": "ASCENDANT",
+      "bonus": {
+        "bronze": 0,
+        "silver": 0,
+        "gold": 1,
+        "platinium": 0
+      }
+    },
+    {
+      "id": "BESTFRIENDS",
+      "bonus": {
+        "bronze": 0,
+        "silver": 0,
+        "gold": 1,
+        "platinium": 0
+      }
+    },
+    {
+      "id": "BLASTER",
+      "bonus": {
+        "bronze": 2,
+        "silver": 4,
+        "gold": 6,
+        "platinium": 0
+      }
+    },
+    {
+      "id": "BASTION",
+      "bonus": {
+        "bronze": 2,
+        "silver": 4,
+        "gold": 6,
+        "platinium": 8
+      }
+    },
+    {
+      "id": "HUNTER",
+      "bonus": {
+        "bronze": 2,
+        "silver": 4,
+        "gold": 6,
+        "platinium": 0
+      }
+    },
+    {
+      "id": "INCANTOR",
+      "bonus": {
+        "bronze": 2,
+        "silver": 0,
+        "gold": 4,
+        "platinium": 0
+      }
+    },
+    {
+      "id": "MAGE",
+      "bonus": {
+        "bronze": 3,
+        "silver": 5,
+        "gold": 7,
+        "platinium": 10
+      }
+    },
+    {
+      "id": "MULTISTRIKER",
+      "bonus": {
+        "bronze": 3,
+        "silver": 5,
+        "gold": 7,
+        "platinium": 9
+      }
+    },
+    {
+      "id": "PRESERVER",
+      "bonus": {
+        "bronze": 2,
+        "silver": 3,
+        "gold": 4,
+        "platinium": 5
+      }
+    },
+   
+    {
+      "id": "SCHOLAR",
+      "bonus": {
+        "bronze": 2,
+        "silver": 4,
+        "gold": 6,
+        "platinium": 0
+      }
+    },
+    {
+      "id": "SHAPESHIFTER",
+      "bonus": {
+        "bronze": 2,
+        "silver": 4,
+        "gold": 6,
+        "platinium": 8
+      }
+    },
+    {
+      "id": "VANGUARD",
+      "bonus": {
+        "bronze": 2,
+        "silver": 4,
+        "gold": 6,
+        "platinium": 8
+      }
+    },
+    {
+      "id": "WARRIOR",
+      "bonus": {
+        "bronze": 2,
+        "silver": 0,
+        "gold": 4,
+        "platinium": 6
+      }
     }
-  } ,{
-    "id": "BARD",
-    "bonus": {
-      "gold": 1
-    }
-  } ,{
-    "id": "BRUISER",
-    "bonus": {
-      "bronze": 2,
-      "silver": 4,
-      "gold": 6,
-      "platinium": 8
-    }
-  } ,{
-    "id": "CANNONEER",
-    "bonus": {
-      "bronze": 2,
-      "gold": 4,
-      "platinium": 6
-    }
-  } ,{
-    "id": "CAVALIER",
-    "bonus": {
-      "bronze": 2,
-      "silver": 3,
-      "gold": 5,
-      "platinium": 6
-    }
-  } ,{
-    "id": "DRAGON",
-    "bonus": {
-      "bronze": 1,
-      "silver": 2,
-      "gold": 4,
-      "platinium": 5
-    }
-  } ,{
-    "id": "DRAGONMANCER",
-    "bonus": {
-      "bronze": 2,
-      "silver": 4,
-      "gold": 6,
-      "platinium": 8
-    }
-  } ,{
-    "id": "EVOKER",
-    "bonus": {
-      "bronze": 2,
-      "silver": 3,
-      "gold": 4
-    }
-  } ,{
-    "id": "GUARDIAN",
-    "bonus": {
-      "bronze": 2,
-      "silver": 4,
-      "gold": 6,
-      "platinium": 8
-    }
-  } ,{
-    "id": "MAGE",
-    "bonus": {
-      "bronze": 3,
-      "silver": 5,
-      "gold": 7,
-      "platinium": 9
-    }
-  } ,{
-    "id": "MYSTIC",
-    "bonus": {
-      "bronze": 2,
-      "silver": 3,
-      "gold": 4,
-      "platinium": 5
-    }
-  } ,{
-    "id": "SHAPESHIFTER",
-    "bonus": {
-      "bronze": 2,
-      "gold": 4
-    }
-  } ,{
-    "id": "SPELL_THIEF",
-    "bonus": {
-      "gold": 1
-    }
-  } ,{
-    "id": "STARCALLER",
-    "bonus": {
-      "gold": 1
-    }
-  } ,{
-    "id": "SWIFTSHOT",
-    "bonus": {
-      "bronze": 2,
-      "silver": 3,
-      "gold": 4,
-      "platinium": 5
-    }
-  } ,{
-    "id": "WARRIOR",
-    "bonus": {
-      "bronze": 2,
-      "gold": 4,
-      "platinium": 6
-    }
-  }]
+  ]
 }

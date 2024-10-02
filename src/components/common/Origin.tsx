@@ -4,10 +4,16 @@ import Hexagon from './Hexagon'
 
 import './_origin.css'
 
-const Origin = ({
+interface OriginProps {
+  id: string
+  bonus: string
+  draggable?: boolean
+}
+export const Origin = ({
   id,
   bonus,
-}) => {
+  draggable
+}: OriginProps) => {
   // Rendering
   const className = ['origin']
   className.push(`origin-${id.toLowerCase()}`)
@@ -21,6 +27,7 @@ const Origin = ({
     >
       <Hexagon>
         <img
+          draggable={Boolean(draggable)}
           className='origin-image'
           src={`images/origins/${id}.svg`}
         />
@@ -28,5 +35,3 @@ const Origin = ({
     </div>
   )
 }
-
-export default Origin

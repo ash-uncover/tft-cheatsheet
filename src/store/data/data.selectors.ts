@@ -13,7 +13,7 @@ const compos = (state: RootState) => root(state).compos
 const items = (state: RootState) => root(state).items
 const origins = (state: RootState) => root(state).origins
 
-const champion = (id: string) => (state: RootState) => champions(state).find(champion => champion.id === id)
+const champion = (id: string) => (state: RootState) => champions(state)[id]
 const compo = (id: string) => (state: RootState) => compos(state).find(compo => compo.id === id)
 const classe = (id: string) => (state: RootState) => classes(state).find(classe => classe.id === id)
 const item = (id: string) => (state: RootState) => items(state).find(item => item.id === id)

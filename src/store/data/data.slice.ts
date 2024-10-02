@@ -11,6 +11,7 @@ import {
 import { 
   DataState 
 } from './data.state'
+import { DataChampion } from 'src/lib/model/DataChampion'
 
 const LOCAL_STORAGE_COMPOS = 'TFT-COMPOS'
 const LOCAL_STORAGE_BUILDS = 'TFT-BUILDS'
@@ -29,11 +30,11 @@ export const getInitialState = () => ({
   status: DataStates.NEVER,
   error: null,
   builds: loadStorage(LOCAL_STORAGE_BUILDS, []),
-  champions: [],
+  champions: {},
   classes: [],
   compos: loadStorage(LOCAL_STORAGE_COMPOS, []),
   items: [],
-  origins: [],
+  origins: []
 })
 // #endregion
 
@@ -48,7 +49,7 @@ interface ILoadRequestPayload {
 }
 export const loadRequest: CaseReducer<
   DataState,
-  PayloadAction<ILoadRequestPayload>
+  PayloadAction<void>
 > = (state, action) => {
   state.status = state.status === DataStates.NEVER ? DataStates.FETCHING_FIRST : DataStates.FETCHING
 }
@@ -57,7 +58,7 @@ export const loadRequest: CaseReducer<
 // #region > Load Success
 interface ILoadSuccessPayload {
   builds: any
-  champions: any
+  champions: Record<string, DataChampion>
   classes: any
   refresh: any
   items: any

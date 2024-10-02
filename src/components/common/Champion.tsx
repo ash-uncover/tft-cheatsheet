@@ -1,29 +1,38 @@
 import React from 'react'
-
+import { useSelector } from 'react-redux'
+import { DataSelectors } from '../../store/data/data.selectors'
 import './_champion.css'
 
-const Champion = ({
+interface ChampionProps {
+  id: string
+  draggable?: boolean
+}
+export const Champion = ({
   id,
-  name,
-  tier,
-}) => {
-  // Rendering
+  draggable
+}: ChampionProps) => {
+  
+  // #region hooks
+  const champion = useSelector(DataSelectors.champion(id))
+  // #endregion
+
+  // #region Rendering
   const className = ['champion']
-  if (tier) {
+  if (champion.tier) {
     className.push('show-tier')
-    className.push(`champion-tier-${tier}`)
+    className.push(`champion-tier-${champion.tier}`)
   }
   return (
     <div
       className={className.join(' ')}
-      title={name}
+      title={champion.name}
     >
       <img
+        draggable={Boolean(draggable)}
         className='champion-image'
-        src={`images/champions/${id}.jpg`}
+        src={`images/champions/${champion.id}_${champion.skin}.png`}
       />
     </div>
   )
+  // #endregion
 }
-
-export default Champion

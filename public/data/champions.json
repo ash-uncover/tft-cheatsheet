@@ -1,357 +1,1322 @@
-{
-  "champions": [{
-    "id": "AOSHIN",
-    "name": "Aoshin",
-    "classes": ["DRAGON"],
-    "origins": ["TEMPEST"],
-    "tier": 8
-  }, {
-    "id": "APHELIOS",
-    "name": "Aphelios",
-    "classes": ["CANNONEER"],
-    "origins": ["DARKFLIGHT"],
-    "tier": 2
-  }, {
-    "id": "AURELION_SOL",
-    "name": "Aurelion Sol",
-    "classes": ["DRAGON","EVOKER"],
-    "origins": ["ASTRAL"],
-    "tier": 8
-  }, {
+[
+  {
+    "id": "AHRI",
+    "origins": ["ARCANA"],
+    "classes": ["SCHOLAR"],
+    "skin": "ARCANA",
+    "health": [
+      550,
+      990,
+      1782
+    ],
+    "damage": [
+      40,
+      72,
+      129.6
+    ],
+    "mana": 40,
+    "manaBase": 0,
+    "ability": 100,
+    "speed": 0.75,
+    "armor": 20,
+    "resist": 20
+  },
+  {
+    "id": "AKALI",
+    "origins": ["PYRO"],
+    "classes": ["MULTISTRIKER", "WARRIOR"],
+    "skin": "INFERNO",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "ASHE",
+    "origins": ["ELDRITCH"],
+    "classes": ["MULTISTRIKER"],
+    "skin": "COVEN",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "BARD",
-    "name": "Bard",
-    "classes": ["BARD","MYSTIC"],
-    "origins": ["GUILD"],
-    "tier": 5
-  }, {
-    "id": "BRAUM",
-    "name": "Braum",
-    "classes": ["GUARDIAN"],
-    "origins": ["SCALESCORN"],
-    "tier": 2
-  }, {
-    "id": "DAEJA",
-    "name": "Daeja",
-    "classes": ["DRAGON"],
-    "origins": ["MIRAGE"],
-    "tier": 7
-  }, {
+    "origins": ["SUGARCRAFT"],
+    "classes": ["PRESERVER", "SCHOLAR"],
+    "skin": "CAFE_CUTIES",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "BLITZCRANK",
+    "origins": ["HONEYMANCY"],
+    "classes": ["VANGUARD"],
+    "skin": "BEEZCRANK",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "BRIAR",
+    "origins": ["ELDRITCH", "RAVENOUS"],
+    "classes": ["SHAPESHIFTER"],
+    "skin": "ORIGINAL",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "CAMILLE",
+    "origins": ["CHRONO"],
+    "classes": ["MULTISTRIKER"],
+    "skin": "STARGAZER",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "CASSIOPEIA",
+    "origins": ["WITCHCRAFT"],
+    "classes": ["INCANTOR"],
+    "skin": "BEWITCHING",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "DIANA",
-    "name": "Diana",
-    "classes": ["ASSASSIN"],
-    "origins": ["SCALESCORN"],
-    "tier": 3
-  }, {
+    "origins": ["FROST"],
+    "classes": ["BASTION"],
+    "skin": "WINTERBLESSED",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "ELISE",
+    "origins": ["ELDRITCH"],
+    "classes": ["SHAPESHIFTER"],
+    "skin": "COVEN",
+    "health": [
+      100,
+      200,
+      300
+    ],
+    "damage": [
+      100,
+      200,
+      300
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "EZREAL",
-    "name": "Ezreal",
-    "classes": ["SWIFTSHOT"],
-    "origins": ["TEMPEST"],
-    "tier": 1
-  }, {
-    "id": "GNAR",
-    "name": "Gnar",
-    "classes": ["SHAPESHIFTER"],
-    "origins": ["JADE"],
-    "tier": 2
-  }, {
-    "id": "GRAVES",
-    "name": "Graves",
-    "classes": ["CANNONEER"],
-    "origins": ["TEMPEST"],
-    "tier": 4
-  }, {
+    "origins": ["PORTAL"],
+    "classes": ["BLASTER"],
+    "skin": "SSG",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "FIORA",
+    "origins": ["WITCHCRAFT"],
+    "classes": ["WARRIOR"],
+    "skin": "BEWITCHING",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "GALIO",
+    "origins": ["PORTAL"],
+    "classes": ["MAGE", "VANGUARD"],
+    "skin": "ENCHANTED",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "GWEN",
+    "origins": ["SUGARCRAFT"],
+    "classes": ["WARRIOR"],
+    "skin": "CAFE_CUTIES",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "HECARIM",
-    "name": "Hecarim",
-    "classes": ["CAVALIER"],
-    "origins": ["RAGEWING"],
-    "tier": 4
-  }, {
-    "id": "IDAS",
-    "name": "Idas",
-    "classes": ["DRAGON","GUARDIAN"],
-    "origins": ["SHIMMERSCALE"],
-    "tier": 7
-  }, {
+    "origins": ["ARCANA"],
+    "classes": ["BASTION", "MULTISTRIKER"],
+    "skin": "ARCANA",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "HWEI",
+    "origins": ["FROST"],
+    "classes": ["BLASTER"],
+    "skin": "WINTERBLESSED",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "JAX",
-    "name": "Jax",
-    "classes": ["BRUISER"],
-    "origins": ["SHIMMERSCALE","JADE"],
-    "tier": 2
-  }, {
+    "origins": ["CHRONO"],
+    "classes": ["MULTISTRIKER"],
+    "skin": "STARGAZER",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "JAYCE",
-    "name": "Jayce",
+    "origins": ["PORTAL"],
     "classes": ["SHAPESHIFTER"],
-    "origins": ["GUILD"],
-    "tier": 4
-  }, {
-    "id": "KAISA",
-    "name": "Kaisa",
-    "classes": ["DRAGONMANCER"],
-    "origins": ["LAGOON"],
-    "tier": 2
-  }, {
+    "skin": "BRIGHTHAMMER",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "JINX",
+    "origins": ["SUGARCRAFT"],
+    "classes": ["HUNTER"],
+    "skin": "CAFE_CUTIES",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "KALISTA",
+    "origins": ["FAERIE"],
+    "classes": ["MULTISTRIKER"],
+    "skin": "FAERIE_COURT",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "KARMA",
-    "name": "Karma",
-    "classes": ["DRAGONMANCER"],
-    "origins": ["JADE"],
-    "tier": 1
-  }, {
-    "id": "LEE_SIN",
-    "name": "Lee Sin",
-    "classes": ["DRAGONMANCER"],
-    "origins": ["TEMPEST"],
-    "tier": 3
-  }, {
-    "id": "LEONA",
-    "name": "Leona",
-    "classes": ["GUARDIAN"],
-    "origins": ["MIRAGE"],
-    "tier": 1
-  }, {
+    "origins": ["CHRONO"],
+    "classes": ["INCANTOR"],
+    "skin": "STARGAZER",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "KASSADIN",
+    "origins": ["PORTAL"],
+    "classes": ["MULTISTRIKER"],
+    "skin": "COSMIC_REAVER",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "KATARINA",
+    "origins": ["FAERIE"],
+    "classes": ["WARRIOR"],
+    "skin": "PRESTIGE_FAERIE_COURT",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "KOGMAW",
+    "origins": ["HONEYMANCY"],
+    "classes": ["HUNTER"],
+    "skin": "BEEMAW",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "LILLIA",
-    "name": "Lillia",
-    "classes": ["CAVALIER","MAGE"],
-    "origins": ["SCALESCORN"],
-    "tier": 2
-  }, {
-    "id": "LUX",
-    "name": "Lux",
+    "origins": ["FAERIE"],
+    "classes": ["BASTION"],
+    "skin": "FAERIE_COURT",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "MILIO",
+    "origins": ["FAERIE"],
+    "classes": ["SCHOLAR"],
+    "skin": "FAERIE_COURT",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "MORDEKAISER",
+    "origins": ["ELDRITCH"],
+    "classes": ["VANGUARD"],
+    "skin": "OLD_GOD",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "MORGANA",
+    "origins": ["WITCHCRAFT"],
+    "classes": ["PRESERVER"],
+    "skin": "BEWITCHING",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "NAMI",
+    "origins": ["ELDRITCH"],
     "classes": ["MAGE"],
-    "origins": ["ASTRAL"],
-    "tier": 2
-  }, {
-    "id": "MALPHITE",
-    "name": "Malphite",
-    "classes": ["BRUISER"],
-    "origins": ["LAGOON"],
-    "tier": 1
-  }, {
+    "skin": "COVEN",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "NASUS",
-    "name": "Nasus",
-    "classes": ["GUARDIAN"],
-    "origins": ["SHIMMERSCALE"],
-    "tier": 1
-  }, {
-    "id": "NIDALEE",
-    "name": "Nidalee",
+    "origins": ["PYRO"],
     "classes": ["SHAPESHIFTER"],
-    "origins": ["ASTRAL"],
-    "tier": 1
-  }, {
+    "skin": "INFERNAL",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "NEEKO",
+    "origins": ["WITCHCRAFT"],
+    "classes": ["SHAPESHIFTER"],
+    "skin": "BEWITCHING",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "NILAH",
-    "name": "Nilah",
-    "classes": ["ASSASSIN"],
-    "origins": ["LAGOON"],
-    "tier": 4
-  }, {
+    "origins": ["ELDRITCH"],
+    "classes": ["WARRIOR"],
+    "skin": "COVEN",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "NOMSY",
-    "name": "Nomsy",
-    "classes": ["DRAGON"],
-    "origins": ["PRODIGY"],
-    "tier": 6
-  }, {
+    "origins": ["DRAGON"],
+    "classes": ["HUNTER"],
+    "skin": "ORIGINAL",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "NORRA",
+    "origins": ["PORTAL"],
+    "classes": ["MAGE", "BESTFRIENDS"],
+    "skin": "ORIGINAL",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "NUNU",
-    "name": "Nunu",
-    "classes": ["CAVALIER"],
-    "origins": ["MIRAGE"],
-    "tier": 3
-  }, {
+    "origins": ["HONEYMANCY"],
+    "classes": ["BASTION"],
+    "skin": "BEELUMP",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "OLAF",
-    "name": "Olaf",
-    "classes": ["BRUISER","WARRIOR"],
-    "origins": ["SCALESCORN"],
-    "tier": 3
-  }, {
-    "id": "PANTHEON",
-    "name": "Pantheon",
-    "classes": ["WARRIOR"],
-    "origins": ["WHISPER"],
-    "tier": 4
-  }, {
-    "id": "QIYANA",
-    "name": "Qiyana",
-    "classes": ["ASSASSIN"],
-    "origins": ["TEMPEST"],
-    "tier": 2
-  }, {
+    "origins": ["FROST"],
+    "classes": ["HUNTER"],
+    "skin": "SENTINEL",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "POPPY",
+    "origins": ["WITCHCRAFT"],
+    "classes": ["BASTION"],
+    "skin": "BEWITCHING",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "RAKAN",
-    "name": "Rakan",
-    "classes": ["GUARDIAN","MYSTIC"],
-    "origins": ["RAGEWING"],
-    "tier": 3
-  }, {
-    "id": "RELL",
-    "name": "Rell",
-    "classes": ["CAVALIER"],
-    "origins": ["DARKFLIGHT"],
-    "tier": 2
-  }, {
-    "id": "RENGAR",
-    "name": "Rengar",
-    "classes": ["ASSASSIN"],
-    "origins": ["DARKFLIGHT"],
-    "tier": 3
-  }, {
-    "id": "SEJUANI",
-    "name": "Sejuani",
-    "classes": ["CAVALIER"],
-    "origins": ["GUILD"],
-    "tier": 1
-  }, {
-    "id": "SENNA",
-    "name": "Senna",
-    "classes": ["CANNONEER"],
-    "origins": ["RAGEWING"],
-    "tier": 1
-  }, {
+    "origins": ["FAERIE"],
+    "classes": ["PRESERVER"],
+    "skin": "ELDERWOOD",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "RUMBLE",
+    "origins": ["SUGARCRAFT"],
+    "classes": ["BLASTER", "VANGUARD"],
+    "skin": "CAFE_CUTIES",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "RYZE",
+    "origins": ["PORTAL"],
+    "classes": ["SCHOLAR"],
+    "skin": "PROFESSOR",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "SERAPHINE",
-    "name": "Seraphine",
-    "classes": ["EVOKER","MYSTIC"],
-    "origins": ["LAGOON"],
-    "tier": 3
-  }, {
-    "id": "SETT",
-    "name": "Sett",
-    "classes": ["DRAGONMANCER"],
-    "origins": ["RAGEWING"],
-    "tier": 1
-  }, {
-    "id": "SHI_OH_YU",
-    "name": "Shi Oh Yu",
-    "classes": ["DRAGON","MYSTIC"],
-    "origins": ["JADE"],
-    "tier": 7
-  }, {
+    "origins": ["FAERIE"],
+    "classes": ["MAGE"],
+    "skin": "FAERIE_COURT",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "SHEN",
+    "origins": ["PYRO"],
+    "classes": ["BASTION"],
+    "skin": "INFERNAL",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "SHYVANA",
-    "name": "Shyvana",
-    "classes": ["DRAGON","SHAPESHIFTER"],
-    "origins": ["RAGEWING"],
-    "tier": 8
-  }, {
-    "id": "SKARNER",
-    "name": "Skarner",
-    "classes": ["BRUISER"],
-    "origins": ["ASTRAL"],
-    "tier": 1
-  }, {
-    "id": "SOHM",
-    "name": "Sohm",
-    "classes": ["DRAGON","MAGE"],
-    "origins": ["LAGOON"],
-    "tier": 7
-  }, {
+    "origins": ["DRAGON"],
+    "classes": ["SHAPESHIFTER"],
+    "skin": "ORIGINAL",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "SMOLDER",
+    "origins": ["DRAGON"],
+    "classes": ["BLASTER"],
+    "skin": "ORIGINAL",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "SORAKA",
-    "name": "Soraka",
-    "classes": ["STARCALLER"],
-    "origins": ["JADE"],
-    "tier": 5
-  }, {
+    "origins": ["SUGARCRAFT"],
+    "classes": ["MAGE"],
+    "skin": "CAFE_CUTIES",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "SWAIN",
-    "name": "Swain",
-    "classes": ["DRAGON"],
-    "origins": ["DARKFLIGHT"],
-    "tier": 7
-  }, {
-    "id": "SYFEN",
-    "name": "Syfen",
-    "classes": ["DRAGON","BRUISER"],
-    "origins": ["WHISPER"],
-    "tier": 7
-  }, {
-    "id": "SYLAS",
-    "name": "Sylas",
-    "classes": ["BRUISER","MAGE"],
-    "origins": ["WHISPER"],
-    "tier": 3
-  }, {
-    "id": "TALIYAH",
-    "name": "Taliyah",
-    "classes": ["MAGE"],
-    "origins": ["LAGOON"],
-    "tier": 1
-  }, {
-    "id": "TERRA",
-    "name": "Terra",
-    "classes": ["DRAGON"],
-    "origins": ["MONOLITH"],
-    "tier": 8
-  }, {
+    "origins": ["FROST"],
+    "classes": ["SHAPESHIFTER"],
+    "skin": "WINTERBLESSED",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "SYNDRA",
+    "origins": ["ELDRITCH"],
+    "classes": ["INCANTOR"],
+    "skin": "COVEN",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "TAHMKENCH",
+    "origins": ["ARCANA"],
+    "classes": ["VANGUARD"],
+    "skin": "ARCANA",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "TARIC",
+    "origins": ["PORTAL"],
+    "classes": ["BASTION"],
+    "skin": "LUMINSHIELD",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "TRISTANA",
+    "origins": ["FAERIE"],
+    "classes": ["BLASTER"],
+    "skin": "FAERIE_COURT",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "TWITCH",
-    "name": "Twitch",
-    "classes": ["SWIFTSHOT"],
-    "origins": ["GUILD"],
-    "tier": 2
-  }, {
+    "origins": ["FROST"],
+    "classes": ["HUNTER"],
+    "skin": "ICE_KING",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "VARUS",
-    "name": "Varus",
-    "classes": ["SWIFTSHOT"],
-    "origins": ["ASTRAL"],
-    "tier": 3
-  }, {
-    "id": "VLADIMIR",
-    "name": "Vladimir",
+    "origins": ["PYRO"],
+    "classes": ["BLASTER"],
+    "skin": "INFERNAL",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "VEIGAR",
+    "origins": ["HONEYMANCY"],
     "classes": ["MAGE"],
-    "origins": ["ASTRAL"],
-    "tier": 1
-  }, {
-    "id": "VOLIBEAR",
-    "name": "Volibear",
-    "classes": ["DRAGONMANCER"],
-    "origins": ["SHIMMERSCALE"],
-    "tier": 3
-  }, {
-    "id": "WU_KONG",
-    "name": "Wu Kong",
-    "classes": ["WARRIOR"],
-    "origins": ["JADE"],
-    "tier": 1
-  }, {
-    "id": "XAYAH",
-    "name": "Xayah",
-    "classes": ["SWIFTSHOT"],
-    "origins": ["RAGEWING"],
-    "tier": 4
-  }, {
-    "id": "YASUO",
-    "name": "Yasuo",
-    "classes": ["WARRIOR","DRAGONMANCER"],
-    "origins": ["MIRAGE"],
-    "tier": 5
-  }, {
-    "id": "YONE",
-    "name": "Yone",
-    "classes": ["WARRIOR"],
-    "origins": ["MIRAGE"],
-    "tier": 2
-  }, {
-    "id": "ZAC",
-    "name": "Zac",
-    "classes": ["GUARDIAN"],
-    "origins": ["LAGOON"],
-    "tier": 2
-  }, {
-    "id": "ZERI",
-    "name": "Zeri",
-    "classes": ["CANNONEER"],
-    "origins": ["LAGOON"],
-    "tier": 3
-  }, {
-    "id": "ZIPPY",
-    "name": "Zippy",
-    "classes": ["DRAGON"],
-    "origins": ["GUILD"],
-    "tier": 6
-  }, {
+    "skin": "BEEGAR",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "VEX",
+    "origins": ["CHRONO"],
+    "classes": ["MAGE"],
+    "skin": "STARGAZER",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "WARWICK",
+    "origins": ["FROST"],
+    "classes": ["VANGUARD"],
+    "skin": "WINTERBLESSED",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "WUKONG",
+    "origins": ["DRUID"],
+    "classes": [],
+    "skin": "ELDERWOOD",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "XERATH",
+    "origins": ["ARCANA"],
+    "classes": ["ASCENDANT"],
+    "skin": "ARCANA",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "ZIGGS",
+    "origins": ["HONEYMANCY"],
+    "classes": ["INCANTOR"],
+    "skin": "BZZZIGGS",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
+    "id": "ZILEAN",
+    "origins": ["CHRONO", "FROST"],
+    "classes": ["PRESERVER"],
+    "skin": "WINTERBLESSED",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  },
+  {
     "id": "ZOE",
-    "name": "Zoa",
-    "classes": ["MAGE","SPELL_THIEF"],
-    "origins": ["SHIMMERSCALE"],
-    "tier": 5
-  }, {
-    "id": "ZYRA",
-    "name": "Zyra",
-    "classes": ["EVOKER"],
-    "origins": ["WHISPER"],
-    "tier": 2
-  }]
-}
+    "origins": ["WITCHCRAFT"],
+    "classes": ["SCHOLAR"],
+    "skin": "ARCANIST",
+    "health": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      0,
+      0,
+      0
+    ],
+    "mana": 100,
+    "manaBase": 100,
+    "ability": 100,
+    "speed": 100,
+    "armor": 100,
+    "resist": 100
+  }
+]

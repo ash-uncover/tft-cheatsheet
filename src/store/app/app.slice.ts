@@ -14,6 +14,11 @@ export const getInitialState = () => ({
   championHover: {},
   itemHover: {},
   originHover: {},
+
+  classeSelected: {},
+  championSelected: {},
+  itemSelected: {},
+  originSelected: {},
 })
 // #endregion
 
@@ -25,15 +30,15 @@ export const getInitialState = () => ({
 
 // #region > Hover Champ
 interface IChampionHoverPayload {
-  id?: string
-  origins?: any
-  classes?: any
+  id: string
+  origins: any
+  classes: any
 }
 export const hoverChampion: CaseReducer<
   AppState,
   PayloadAction<IChampionHoverPayload>
 > = (state, action) => {
-  if (!state.championHover.locked) {
+  if (!state.championSelected.id) {
     state.championHover = {
       id: action.payload.id,
       origins: action.payload.origins,
@@ -43,27 +48,51 @@ export const hoverChampion: CaseReducer<
 }
 // #endregion
 
+// #region > Unhover Champ
+export const unhoverChampion: CaseReducer<
+  AppState,
+  PayloadAction<void>
+> = (state, action) => {
+  state.championHover = {}
+}
+// #endregion
+
+
 // #region > Select Champ
 interface IChampionSelectPayload {
   id: string
-  championId: string
   origins: any
   classes: any
 }
 export const selectChampion: CaseReducer<
-AppState,
-PayloadAction<IChampionSelectPayload>
+  AppState,
+  PayloadAction<IChampionSelectPayload>
 > = (state, action) => {
-  if (action.payload.championId) {
-    state.championHover = {
-      locked: true,
+  if (action.payload.id) {
+    state.championHover = {}
+    state.championSelected = {
       id: action.payload.id,
       origins: action.payload.origins,
       classes: action.payload.classes,
     }
   } else {
-    state.itemHover.locked = false
+    state.championSelected = {}
+    state.championHover = {
+      id: action.payload.id,
+      origins: action.payload.origins,
+      classes: action.payload.classes,
+    }
   }
+}
+// #endregion
+
+// #region > Unselect Champ
+export const unselectChampion: CaseReducer<
+  AppState,
+  PayloadAction<void>
+> = (state, action) => {
+  state.championHover = state.championSelected
+  state.championSelected = {}
 }
 // #endregion
 
@@ -192,7 +221,9 @@ export const AppSlice = createSlice({
 
   reducers: {
     hoverChampion,
+    unhoverChampion,
     selectChampion,
+    unselectChampion,
     hoverClass,
     selectClass,
     hoverItem,
