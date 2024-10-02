@@ -186,7 +186,7 @@ const ChampionTile = ({ champion }) => {
 
   // Rendering
   const className = ['champion-tile']
-  if (championActive?.id === champion.id) {
+  if ((!championActive && !originActive && !classeActive) || championActive?.id === champion.id) {
     className.push('highlight')
     className.push('full')
   } else {
